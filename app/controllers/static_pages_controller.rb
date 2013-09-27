@@ -10,4 +10,8 @@ class StaticPagesController < ApplicationController
   
   def get_started
   end
+
+  def intro_to_engineering
+  end
+  
 end

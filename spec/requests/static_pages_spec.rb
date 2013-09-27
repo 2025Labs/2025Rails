@@ -33,6 +33,14 @@ describe "Static pages" do
       expect(page).to have_content('Get Started')
     end   
   end
+
+  describe "Intro to Engineering page" do
+
+    it "should have the content 'Intro to Engineering'" do
+      visit intro_to_engineering_path
+      expect(page).to have_content('Intro to Engineering')
+    end   
+  end
     
     
 end

@@ -4,7 +4,9 @@ Site2025::Application.routes.draw do
    match '/contact', to: 'static_pages#contact', via: 'get'
    match '/about_us', to: 'static_pages#about_us', via: 'get'
    match '/get_started', to: 'static_pages#get_started', via: 'get'
-  
+   match 'intro_to_engineering', to: 'static_pages#intro_to_engineering', via: 'get'
+   
+    
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
