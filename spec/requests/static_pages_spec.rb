@@ -6,9 +6,7 @@ describe "Static pages" do
     it "should have the content '2025 Labs'" do
       visit root_path
       expect(page).to have_content('2025 Labs')
-    end
-    
-    
+    end 
   end
     
     
@@ -17,9 +15,7 @@ describe "Static pages" do
     it "should have the content 'Contact'" do
       visit contact_path
       expect(page).to have_content('Contact')
-    end
-
-    
+    end    
   end
   
   describe "About Us page" do
@@ -28,8 +24,14 @@ describe "Static pages" do
       visit about_us_path
       expect(page).to have_content('About')
     end
+  end
     
-    
+  describe "Get Started page" do
+
+    it "should have the content 'Get Started'" do
+      visit get_started_path
+      expect(page).to have_content('Get Started')
+    end   
   end
     
     
