@@ -1,4 +1,6 @@
 Site2025::Application.routes.draw do
+  get "articles/new"
+  get "articles/index"
    root 'static_pages#home'
 
    match '/contact', to: 'static_pages#contact', via: 'get'

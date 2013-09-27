@@ -1,0 +1,34 @@
+<% provide(:title, 'About Us') %>
+
+<div class="row-fluid">
+	<div class="span12">				
+	</div><!--span12-->
+</div> <!--row-->
+
+<% @articles.each do |article| %>
+<div class="row-fluid">
+	<div class="span1">
+		<img src=<%=article.education %> >
+		<img src=<%=article.gender %> >
+		<img src=<%=article.race %> >
+		<img src=<%=article.attitudes %> >
+		<img src=<%=article.employment %> >
+	</div><!--span1-->
+	
+	<div class="span1">
+		<img src=<%=article.source_logo %> >
+	</div><!--span2-->
+
+    <div class="span10">
+		<span class="colortxt2"><%= link_to article.title, article.source_link, :target => "_blank" %></span>
+		<%=article.summary %>	</div> <!--span9-->
+</div>	<!--row-->
+	<% unless article =! @articles.last %>
+		<div class="row-fluid">
+				<div class="span12">
+					<hr class="lines">
+				</div> <!--span12-->	
+		</div> <!--row-->
+		<% end %>
+
+<% end %>
