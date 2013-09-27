@@ -1,8 +1,9 @@
 Site2025::Application.routes.draw do
+   root 'static_pages#home'
 
-    get "static_pages/home"
-    get "static_pages/about_us"
-    get "static_pages/contact"
+   match '/contact', to: 'static_pages#contact', via: 'get'
+   match '/about_us', to: 'static_pages#about_us', via: 'get'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

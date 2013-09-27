@@ -10,29 +10,29 @@
 	<div class="navbar navbar-static-top"> 
 		<nav>    
 				<ul class="nav pull-right">
-			      	<li class="active" ><a href="home.html">Company</a>
+			      	<li><%= link_to "Home",    root_path %>
 						<ul>
-							<li><a href="about_us.html">About Us</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><%= link_to "About Us",    about_us_path %></li>
+							<li><%= link_to "Contact",    contact_path %></li>
 						</ul>
 					</li>
-					<li><a href="gettingstarted.html">Get Started</a></li>
-					<li><a href="intro_to_engineering.html">Intro to Engineering</a>
+					<li><%= link_to "Get Started",    '#' %></li>
+					<li><%= link_to "Intro to Engineering",    '#' %>
 						<ul>
-							<li><a href="engineering_process.html">Engineering Process</a></li>
-							<li><a href="machines.html">Machines</a></li>
-							<li><a href="energy.html">Energy</a></li>
-							<li><a href="computing.html">Computing</a></li>
+							<li><%= link_to "Engineering Process",    '#' %></li>
+							<li><%= link_to "Machines",    '#' %></li>
+							<li><%= link_to "Energy",    '#' %></li>
+							<li><%= link_to "Computing",    '#' %></li>
 						</ul>
 					</li>
 				    <li><a href="resources.html">Resources</a>
 						<ul>
-							<li><a href="web_resources.html">Web Resources</a></li>
-							<li><a href="toys_and_games.html">Toys and Games</a></li>
-							<li><a href="camps_and_events.html">Camps and Events</a></li>
+							<li><%= link_to "Web Resources",    '#' %></li>
+							<li><%= link_to "Toys and Games",    '#' %></li>
+							<li><%= link_to "Camps and Events",    '#' %></li>
 						</ul>
 					</li>
-					<li><a href="research.html">Research</a></li>
+					<li><%= link_to "Research",    '#' %></li>
 			    </ul>
 		</nav>
 	</div> <!--navbar-->
