@@ -1,0 +1,220 @@
+@import "bootstrap";
+
+/* Styling for the survey banner*/
+.banner {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 30px;
+  color: #ffffff;
+  /*background-color: #21B6A5;*/
+  background-color: #cccc33;
+  text-align: center;
+}
+
+/* Styling for the header */
+.socialmedia{
+	float:right;
+	padding-top:10px;
+
+}
+
+.cologo{
+	padding-top:10px;
+}
+
+/* This is just for the about_us page*/
+.names{
+	text-align: left;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styling to round the corners on the images */
+.rounded {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/* Styling to add some different text options that are used throughout */
+.sectionheader {
+	color: #ff6600;
+	font-size: 19px;
+}
+
+.summarystatement {
+	color: #000000;
+	font-weight: bold;
+	font-style: italic;
+  	line-height: 20px;
+	font-size: 15px;
+	margin: 10px 0;
+}
+
+.caption {
+	color: #000000;
+	font-size: 9px;
+	line-height: 10px;
+	font-style: italic;
+}
+
+.colortxt {
+	color: #21B6A5;
+	font-size: 19px;
+}
+
+.colortxt2 {
+	color: #21B6A5;
+	font-size: 22px;
+	font-variant:small-caps; 
+	padding-right:10px;
+}
+
+.colortxtlittle {
+	color: #21B6A5;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.blogtxt {
+	color: #aa3366;
+}
+
+.headings {
+	font-weight: bold;
+	font-size:26px;
+}
+
+.catbutton {
+	padding-bottom: 20px;
+}
+
+/*Styling  the links */
+a:link {
+	text-decoration:none;
+	color: #0099cc;
+}
+
+a:visited {
+	text-decoration:none;
+	color: #0099cc;
+}
+	
+a:hover {
+	text-decoration:underline;
+	color: #21B6A5;
+}
+
+a:active {
+	text-decoration:none;
+}
+
+/*Styling  the footer main links */
+a.footheader:link {
+	text-decoration:none;
+	font-size: 17px;
+	font-family: Impact, Charcoal, sans-serif;
+	color: #aa3366;
+}
+
+a.footheader:visited {
+	text-decoration:none;
+	font-size: 17px;
+	font-family: Impact, Charcoal, sans-serif;
+	color: #aa3366;
+}
+	
+a.footheader:hover {
+	text-decoration:underline;
+	font-size: 17px;
+	font-family: Impact, Charcoal, sans-serif;
+	color: #21B6A5;
+}
+
+a.footheader:active {
+	text-decoration:none;
+	font-size: 17px;
+	font-family: Impact, Charcoal, sans-serif;
+}
+
+/*Styling  the footer sublinks */
+a.footsub:link {
+	text-decoration:none;
+	color: #aa3366;
+}
+
+a.footsub:visited {
+	text-decoration:none;
+	color: #aa3366;
+}
+	
+a.footsub:hover {
+	text-decoration:underline;
+	color: #21B6A5;
+}
+
+a.footsub:active {
+	text-decoration:none;
+}
+
+/* Dropdown menu CSS */
+nav ul {
+	background: #fff; 
+	border-radius: 0px;  
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+
+nav ul:after {
+		content: ""; clear: both; display: block;
+}
+	
+nav ul li:active{
+		background:#fff;
+}
+	
+nav ul li:hover > ul {
+	display: block;
+	background: #fff;
+}
+
+nav ul ul {
+	display: none;
+	background: #fff; border-radius: 0px; padding: 0;
+	position: absolute; top: 100%;
+}
+
+nav ul ul li {
+	float: none; 
+	/*border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;*/
+	border:1px solid #ccc;
+	position: relative;
+}
+
+				
+nav ul ul li a:hover {
+	background: #fff;
+}
+		
+
+nav ul li a {
+	display: block; padding: 10px 10px;
+}
+
+#footer {
+	/*height: 100px;*/
+	background-color: #d9d9d9;
+	text-align: left;
+	padding-left:40px;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-right:40px;
+	margin-top:40px;
+}
+
