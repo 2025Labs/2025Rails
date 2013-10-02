@@ -14,4 +14,16 @@ class StaticPagesController < ApplicationController
   def intro_to_engineering
   end
   
+  def engineering_process
+  end
+  
+  def machines
+  end
+  
+  def energy
+  end
+  
+  def computing
+  end
+  
 end

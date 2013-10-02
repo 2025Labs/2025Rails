@@ -41,6 +41,14 @@ describe "Static pages" do
       expect(page).to have_content('Intro to Engineering')
     end   
   end
+  
+  describe "Engineering Process page" do
+
+    it "should have the content 'Engineering Process'" do
+      visit engineering_process_path
+      expect(page).to have_content('Engineering Process')
+    end   
+  end
     
     
 end

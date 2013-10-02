@@ -1,12 +1,19 @@
 Site2025::Application.routes.draw do
-  get "articles/new"
+  
   get "articles/index"
    root 'static_pages#home'
 
    match '/contact', to: 'static_pages#contact', via: 'get'
    match '/about_us', to: 'static_pages#about_us', via: 'get'
    match '/get_started', to: 'static_pages#get_started', via: 'get'
-   match 'intro_to_engineering', to: 'static_pages#intro_to_engineering', via: 'get'
+   
+   match '/intro_to_engineering', to: 'static_pages#intro_to_engineering', via: 'get'
+   match '/engineering_process', to: 'static_pages#engineering_process', via: 'get'
+   match '/machines', to: 'static_pages#machines', via: 'get' 
+   match '/energy', to: 'static_pages#energy', via: 'get'
+   match '/computing', to: 'static_pages#computing', via: 'get'
+   
+   match '/research', to: 'articles#index', via: 'get'
    
     
   # The priority is based upon order of creation: first created -> highest priority.
