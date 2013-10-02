@@ -1,6 +1,8 @@
 Site2025::Application.routes.draw do
-  resources :articles do
-  end
+  #get "resource_types/new"
+  #get "resource_types/index"
+  resources :articles
+  resources :resource_types
   #get "articles/index"
    root 'static_pages#home'
 
