@@ -23,7 +23,7 @@
 	</div> <!--span2-->	
 	
 	<div class="span2">
-		<img src="/assets/Icons/employement.png" alt="Employment"> Employment
+		<img src="/assets/Icons/employment.png" alt="Employment"> Employment
 	</div> <!--span2-->	
 </div> <!--row-->	
 
@@ -51,21 +51,25 @@
 
     		<div class="span10">
 
-				<span class="colortxt2"><%=article.title%></span>
-				<%=article.summary %>	
+				<span class="colortxt2"><%=article.title.html_safe%></span>
+				<%=article.summary.html_safe %>	
 			</div> <!--span10-->
 		</div><!--row-->
-		
-
-		
-				<a href="mailto:info@2025labs.com?Subject=Suggestion%20For%20a%20Research%20Item" target="_top"> <img class="center"src="/assets/pics/resource_suggestion.png"> </a>
 		
 		<div class="row-fluid">
 			<div class="span12">				
 			</div> <!--span12-->
 		</div> <!--row-->
-			
+		
 		<% end %>
+		
+
+		
+			<a href="mailto:info@2025labs.com?Subject=Suggestion%20For%20a%20Research%20Item" target="_top"> <img class="center"src="/assets/pics/resource_suggestion.png"> </a>
+		
+		
+			
+		
 		
 	</div>	<!--span9-->
 		
