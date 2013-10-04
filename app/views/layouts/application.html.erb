@@ -25,6 +25,7 @@
 
 </head>
 <body>
+	<%= render ('layout/banner') if (params[:static_pages] == 'about_us')%>
 	<%= render 'layouts/header' %>
 	<div class="container-fluid">
 		<%= yield %>
