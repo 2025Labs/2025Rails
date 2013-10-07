@@ -12,6 +12,8 @@ require 'bundler/capistrano'
 set :user, "2025labs"
 set :use_sudo, false
 
+set :normalize_asset_timestamps, false
+
 #### APP SETTINGS
 set :application, "2025Labs"
 set :deploy_to, "/var/web/#{application}"
