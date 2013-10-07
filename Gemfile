@@ -9,6 +9,8 @@ group :development, :test do
   gem 'pg'
   gem 'rspec-rails', '2.11.0'
   gem 'factory_girl_rails', '4.1.0'
+  gem 'capistrano'
+  gem 'capistrano-ext'
 end
 
 # Gems used only for assets and not required
