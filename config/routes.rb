@@ -1,4 +1,9 @@
 Site2025::Application.routes.draw do
+  get "resources/web_resources"
+  get "resources/toys_and_games"
+  get "resources/camps_and_events"
+  get "resources/awards_scholarships"
+  get "resources/add"
   #get "resource_types/new"
   #get "resource_types/index"
   resources :articles
@@ -17,6 +22,7 @@ Site2025::Application.routes.draw do
    match '/computing', to: 'static_pages#computing', via: 'get'
    
    match '/research', to: 'articles#index', via: 'get'
+   match '/web_resources', to: 'resources#web_resources', via: 'get'
    
     
   # The priority is based upon order of creation: first created -> highest priority.
