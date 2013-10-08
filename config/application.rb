@@ -28,6 +28,6 @@ config.assets.version = '1.0'
 # Change the path that assets are served from
 # config.assets.prefix = "/assets"
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
-    config.assets.precompile += ['pics/*']
+    config.assets.precompile += ['*pics/*']
   end
 end
