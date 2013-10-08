@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :resource_type do
-    type ""
+    r_type "MyString"
     description "MyString"
     tips "MyString"
   end
