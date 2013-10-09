@@ -22,7 +22,8 @@ Site2025::Application.routes.draw do
    match '/computing', to: 'static_pages#computing', via: 'get'
    
    match '/research', to: 'articles#index', via: 'get'
-   match '/web_resources', to: 'resources#web_resources', via: 'get'
+   #match '/web_resources', to: 'resources#web_resources', via: 'get'
+   #match '/camps_and_events', to: 'resources#camps_and_events', via: 'get'
    
     
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,4 +1,5 @@
 class ResourceTypesController < ApplicationController
+  
   def new
   end
 
