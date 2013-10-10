@@ -3,12 +3,12 @@ source 'http://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 gem 'bootstrap-sass', '2.3.2.0'
+gem 'factory_girl_rails', '4.1.0'
 
 group :development, :test do
   #gem 'sqlite3', '1.3.5'
   gem 'pg'
   gem 'rspec-rails', '2.11.0'
-  gem 'factory_girl_rails', '4.1.0'
   gem 'capistrano'
   gem 'capistrano-ext'
 end
