@@ -3,10 +3,10 @@
 FactoryGirl.define do
   factory :resource do
     r_type "MyString"
-    engineering_process "MyString"
-    machines "MyString"
-    energy "MyString"
-    computing "MyString"
+    engineering_process ""
+    machines ""
+    energy ""
+    computing ""
     ages "MyString"
     locations "MyString"
     title "MyString"

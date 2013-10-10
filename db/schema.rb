@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131007205704) do
+ActiveRecord::Schema.define(version: 20131009190739) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,7 +40,6 @@ ActiveRecord::Schema.define(version: 20131007205704) do
   end
 
   create_table "resources", force: true do |t|
-    t.string   "r_type"
     t.string   "engineering_process"
     t.string   "machines"
     t.string   "energy"
@@ -51,6 +50,7 @@ ActiveRecord::Schema.define(version: 20131007205704) do
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "r_type"
   end
 
 end

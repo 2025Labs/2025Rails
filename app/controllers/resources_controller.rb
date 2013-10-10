@@ -1,6 +1,7 @@
 class ResourcesController < ApplicationController
   
   def web_resources
+    @resource_type = ResourceType.where(r_type: "Web Resources")
     @resources = Resource.where(r_type: "Web Resources")
     
   end
