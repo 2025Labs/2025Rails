@@ -6,7 +6,7 @@
 
 	<div class="span7">
 		<h2>Intro to Engineering</h2>
-		We want to get more kids interested in Engineering. (See our <a href="research.html">Research</a> page for motivation on that front.) We think that requires a combination of introducing kids to Engineering and building their technological literacy. We have discovered that figuring out how to build our kids' technological literacy often meant building our own.
+		We want to get more kids interested in Engineering. (See our <%= link_to "Research",   research_path %> page for motivation on that front.) We think that requires a combination of introducing kids to Engineering and building their technological literacy. We have discovered that figuring out how to build our kids' technological literacy often meant building our own.
 		<p></p>
 
 		<a href="http://www.merriam-webster.com/dictionary/engineering" target="_blank">Merriam-Webster</a> defines engineering as the <i>"application of science and mathematics by which the properties of matter and the sources of energy in nature are made useful to people"</i>. A shorthand way of thinking of engineering is that it is application of math and science to make or maintain useful technology.
@@ -20,33 +20,33 @@
 		<p></p>
 		<div class="row-fluid">
 			<div class="span1">
-				<a href="engineering_process.html"><img src="/assets/pics/eptag.png" style="float:left"></a>
+				<%= link_to image_tag("pics/eptag.png", :alt => "Engineering Process Icon", :class => "iconleft"), engineering_process_path %>
 			</div> <!-- span 1 -->
 			
 			<div class="span11">
-				<b><a href="engineering_process.html">Engineering Process</b></a> Our framework starts with an explanation of the processes engineers use to turn an idea into technology, or to accomplish other goals found under the umbrella of Engineering.
+				<b><%= link_to "Engineering Process",   engineering_process_path %></b> Our framework starts with an explanation of the processes engineers use to turn an idea into technology, or to accomplish other goals found under the umbrella of Engineering.
 			</div> <!-- span 11 -->
 		</div> <!-- row -->
 		</br>
 
 		<div class="row-fluid">
 			<div class="span1">
-				<a href="machines.html"><img src="/assets/pics/mtag.png" style="float:left"></a>
+				<%= link_to image_tag("pics/mtag.png", :alt => "Machines Icon", :class => "iconleft"), machines_path %>
 			</div> <!-- span 1 -->
 			
 			<div class="span11">
-				<b><a href="machines.html">Machines</b></a> You will learn that machines are one type of technology created by engineers, and you will get an introduction into how machines make work easier.
+				<b><%= link_to "Machines",   machines_path %></b> You will learn that machines are one type of technology created by engineers, and you will get an introduction into how machines make work easier.
 			</div> <!-- span 11 -->
 		</div> <!-- row -->
 		</br>
 
 		<div class="row-fluid">
 			<div class="span1">
-				<a href="energy.html"><img src="/assets/pics/entag.png" style="float:left"></a>
+				<%= link_to image_tag("pics/entag.png", :alt => "Energy Icon", :class => "iconleft"), energy_path %>
 			</div> <!-- span 1 -->
 			
 			<div class="span11">
-				<b><a href="energy.html">Energy</b></a> Technology doesn't exist or work without energy, so you will learn how we collect and consume the energy that powers the devices in our daily lives.
+				<b><%= link_to "Energy",   energy_path %></b> Technology doesn't exist or work without energy, so you will learn how we collect and consume the energy that powers the devices in our daily lives.
 			</div> <!-- span 11 -->
 		</div> <!-- row -->
 		</br>
@@ -54,20 +54,17 @@
 
 		<div class="row-fluid">
 			<div class="span1">
-				<a href="computing.html"><img src="/assets/pics/ctag.png" style="float:left"></a>
+				<%= link_to image_tag("pics/ctag.png", :alt => "Computing Icon", :class => "iconleft"), computing_path %>
 			</div> <!-- span 3 -->
 		
 			<div class="span11">
-				<b><a href="computing.html">Computing</b></a> Since we live in the information age, any study of engineering is incomplete without an overview of computing. In this section you will learn what "computing" means, as well as some very basic knowledge of computer architecture, communications (networking), and the ever-increasing degree to which our lives are supported by computerized automation.
+				<b><%= link_to "Computing",   computing_path %></b> Since we live in the information age, any study of engineering is incomplete without an overview of computing. In this section you will learn what "computing" means, as well as some very basic knowledge of computer architecture, communications (networking), and the ever-increasing degree to which our lives are supported by computerized automation.
 			</div> <!-- span 11 -->
 		</div> <!-- row -->
-	</br>
-	</br>
-
     </div> <!--span7-->	
 
 	<div class="span3">	
-		<br><br><a href="research.html"> <img src="facts/sciedu.png"  alt="18 percent"> </a>	
+		<br><br><%= link_to image_tag("facts/sciedu.png", :alt => "18 percent", :class => "iconleft"), research_path %>
 		<hr>
 		
 		<div class="row-fluid">
@@ -76,21 +73,10 @@
 		</div> <!--row-->
 
 
-		<div class="row-fluid">
-			<div class="span12" style="text-align:center">
-				<script type="text/javascript"><!--
-				google_ad_client = "ca-pub-2408047913757155";
-				/* right_column */
-				google_ad_slot = "7631510629";
-				google_ad_width = 160;
-				google_ad_height = 600;
-				//-->
-				</script>
-				<script type="text/javascript"
-				src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-				</script>				
-			</div> <!--span12-->	
-		</div> <!--row-->	
+		<div class="row-fluid" style="text-align:center">
+			<%= render "layouts/skyscraperad" %>	
+		</div> <!--row-->
+			
 	</div>	<!--span3-->
 </div><!--row-->
 

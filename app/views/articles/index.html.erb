@@ -8,22 +8,23 @@
 
 <div class="row-fluid">
 	<div class="span2">
-		<img src="/assets/Icons/education.png" alt="Education"> Education
+		<%= image_tag("logos/attitudes.png") %> Education
 	</div> <!--span2-->
 	
 	<div class="span2">
-		<img src="/assets/Icons/gender.png" alt="Gender"> Gender
+		<%= image_tag("logos/gender.png") %> Gender
 	</div> <!--span2-->	
+	
 	<div class="span2">
-		<img src="/assets/Icons/race.png" alt="Race"> Race/Ethnicity
+		<%= image_tag("logos/race.png") %> Race/Ethnicity
 	</div>
 	
 	<div class="span2">
-		<img src="/assets/Icons/attitudes.png" alt="Social Factors"> Social Factors
+		<%= image_tag("logos/attitudes.png") %> Social Factors
 	</div> <!--span2-->	
 	
 	<div class="span2">
-		<img src="/assets/Icons/employment.png" alt="Employment"> Employment
+		<%= image_tag("logos/employment.png") %> Employment
 	</div> <!--span2-->	
 </div> <!--row-->	
 
@@ -38,15 +39,15 @@
 		<% @articles.each do |article| %>
 		<div class="row-fluid">
 			<div class="span1">
-				<img src=<%=article.education %> >
-				<img src=<%=article.gender %> >
-				<img src=<%=article.race %> >
-				<img src=<%=article.attitudes %> >
-				<img src=<%=article.employment %> >
+				<%= image_tag(article.education) %>
+				<%= image_tag(article.gender) %>
+				<%= image_tag(article.race) %>
+				<%= image_tag(article.attitudes) %>
+				<%= image_tag(article.employment) %>
 			</div><!--span1-->
 	
 			<div class="span1">
-				<img src=<%=article.source_logo %> >
+				<%= image_tag(article.source_logo) %>
 			</div><!--span2-->
 
     		<div class="span10">

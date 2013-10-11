@@ -2,8 +2,9 @@
 
 <div class="row-fluid">
 	<div class="span3">
-		<img class="rounded" src="/assets/pics/kidwithrobot.jpg" alt="boy playing with robot">
+		<%= image_tag("pics/kidwithrobot.jpg", :alt => "boy playing with robot", :class =>'rounded') %> 
 	</div>
+	
 	<div class="span6">
 		<h2>About Us</h2>
 		<h4>About</h4>
@@ -35,33 +36,19 @@
 
 	<div class="span3">
 		<div class="row-fluid">
-			<div class="span12">
-				<a href="research.html"><img src="/assets/facts/stat50percent.png" alt="building future engineers"></a>
-				50% of the 20 woman CEOs in Fortune 500 companies have STEM degrees
-
-				<hr>
-			</div> <!--span12-->	
-         </div> <!--span4-->
+			<br><br>
+			<%= link_to image_tag("facts/stat50percent.png", :alt => "building future engineers", :class =>'rounded'),   research_path %>
+			50% of the 20 woman CEOs in Fortune 500 companies have STEM degrees
+			<hr>
+         </div> <!--row-->
 
 		<div class="row-fluid">
 			<div class="span12">				
 			</div> <!--span12-->
 		</div> <!--row-->
 		
-		<div class="row-fluid">
-			<div class="span12" style="text-align:center">
-				<script type="text/javascript"><!--
-				google_ad_client = "ca-pub-2408047913757155";
-				/* right_column */
-				google_ad_slot = "7631510629";
-				google_ad_width = 160;
-				google_ad_height = 600;
-				//-->
-				</script>
-				<script type="text/javascript"
-				src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-				</script>				
-			</div> <!--span12-->
+		<div class="row-fluid" style="text-align:center">
+			<%= render "layouts/skyscraperad" %>				
 		</div> <!--row-->
 		
      </div>	<!--row span3-->

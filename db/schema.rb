@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20131009190739) do
     t.string   "r_type"
     t.string   "description"
     t.string   "tips"
+    t.string   "r_path"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "resource_icon"

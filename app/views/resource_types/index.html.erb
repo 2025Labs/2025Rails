@@ -3,24 +3,19 @@
 <div class="row-fluid">
 
 	<div class="span2">
-		<a href="web_resources.html"><img class="catbutton" src=<%=asset_path "navgraphics/web_resources.png" %> alt="Web Resources"></a> <p></p>
-		<a href="toys_and_games.html"><img class="catbutton" src=<%=asset_path "navgraphics/toys_and_games.png" %> alt="Toys and Games"></a><p></p>
-		<a href="camps_and_events.html"><img class="catbutton" src=<%=asset_path "navgraphics/camps_and_events.png" %>  alt="Camps and Events"></a><p></p>
-		
-	
+		<%= render "static_pages/resourcesnav" %>
 	</div>
-
 
 	<div class="span7">
 		<h2>Resources</h2>
-		
+		This section contains references to useful resources that you can use to expose kids to Engineering. Those resources include: 
+		</br>
+		</br>
 		<% @resource_types.each do |resource_type| %>
-			<%=resource_type.r_type %> <%=resource_type.description %>
+		<%= link_to resource_type.r_type,   resourc_type.r_path %> <%=resource_type.description %>
 		
-		<div class="row-fluid">
-			<div class="span12">				
-			</div> <!--span12-->
-		</div> <!--row-->
+		</br>
+		</br>
 
 		<% end %>
 
@@ -33,35 +28,19 @@
 
 	<div class="span3">	
 		<div class="row-fluid">
-			<div class="span12">
-				<br><br>
-				<a href="research.html"> <img class="rounded" src=<%=asset_path "facts/engrspec_gender.png" %> alt="demo stats"> </a>
-				<hr>
-			</div> <!--span12-->	
+			<br><br>
+			<%= link_to image_tag("facts/engrspec_gender.png", :alt => "33%"),   research_path %>
+			<hr>
 		</div> <!--row-->
 		
-			<div class="row-fluid">
-				<div class="span12">				
-				</div> <!--span12-->
-			</div> <!--row-->
+		<div class="row-fluid">
+			<div class="span12">				
+			</div> <!--span12-->
+		</div> <!--row-->
 
 
-			<div class="row-fluid">
-				<div class="span12" style="text-align:center">
-					<script type="text/javascript"><!--
-					google_ad_client = "ca-pub-2408047913757155";
-					/* right_rectangle */
-					google_ad_slot = "9108243823";
-					google_ad_width = 300;
-					google_ad_height = 250;
-					//-->
-					</script>
-					<script type="text/javascript"
-					src="//pagead2.googlesyndication.com/pagead/show_ads.js">
-					</script>	
-				</div> <!--span12-->
-			</div> <!--row-->
-			
+		<div class="row-fluid" style="text-align:center">
+			<%= render "layouts/mediumad" %>	
+		</div> <!--row-->	
 	</div> <!--span3-->		
 </div>	<!--row-->
-</div>

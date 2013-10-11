@@ -3,7 +3,7 @@
 <div class="row-fluid">
 
 	<div class="span4">
-  		<a href="gettingstarted.html"><img class="rounded"src=<%=assset_path "/pics/purpleboxtextbfegetstarted2.png" %> alt="building future engineers"></a>
+  		<%= link_to image_tag("pics/purpleboxtextbfegetstarted2.png", :alt => "building future engineers", :class =>'rounded'),   get_started_path %>
 	</div>	<!--span4-->
 
 	<div class="span4">
@@ -17,29 +17,15 @@
 	</div> <!--span4-->
 
 	<div class="span3">
-		<br>
-  		<a href="research.html"><img src=<%=asset_path "/facts/ctq_cleanbr.png" %> alt="the number 8"></a>
-		
-		<hr>
+		<div class="row-fluid">
+			<br>
+			<%= link_to image_tag("facts/ctq_cleanbr.png", :alt => "the number 8", :class =>'rounded'),   research_path %>
+			<hr>
+		</div><!--row-->
 
-		
-
-
-			<div class="row-fluid">
-				<div class="span12" style="text-align:center">
-					<script type="text/javascript"><!--
-					google_ad_client = "ca-pub-2408047913757155";
-					/* right_rectangle */
-					google_ad_slot = "9108243823";
-					google_ad_width = 300;
-					google_ad_height = 250;
-					//-->
-					</script>
-					<script type="text/javascript"
-					src="//pagead2.googlesyndication.com/pagead/show_ads.js">
-					</script>	
-				</div> <!--span12-->
-			</div> <!--row-->
-		
+		<div class="row-fluid" style="text-align:center">
+				<%= render "layouts/mediumad" %>
+		</div> <!--row-->	
 	</div> <!--span3-->	
+	
 </div> <!--row-->

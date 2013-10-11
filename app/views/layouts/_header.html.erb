@@ -1,8 +1,8 @@
-<div class="container-fluid" style="padding-top:10px">		
-	<a href="home.html"><img src=<%= asset_path 'PlumLogo.png' %> alt="2025 Labs logo"></a>
+<div class="container-fluid" style="padding-top:10px">
+	<%= link_to image_tag("PlumLogo.png", :alt => "2025 Labs Log"),   root_path %>	
 
-	<a href="https://twitter.com/2025Labs" target="_blank"><img class="socialmedia" src=
-		<%=asset_path 'twitterbird.png' %> alt-"twitter logo"></a>
+
+	<a href="https://twitter.com/2025Labs" target="_blank"><%= image_tag("twitterbird.png", :alt => "twitter logo", :class =>'socialmedia') %></a>
 
 	<div class="navbar navbar-static-top"> 
 		<nav>    
@@ -25,8 +25,8 @@
 				    <li><%= link_to "RESOURCES",    resource_types_path %>
 						<ul>
 							<li><%= link_to "WEB RESOURCES",   resources_web_resources_path %></li>
-							<li><%= link_to "TOYS AND GAMES",    '#' %></li>
-							<li><%= link_to "CAMPS AND EVENTS",    '#' %></li>
+							<li><%= link_to "TOYS AND GAMES",    resources_toys_and_games_path %></li>
+							<li><%= link_to "CAMPS AND EVENTS",    resources_camps_and_events_path %></li>
 						</ul>
 					</li>
 					<li><%= link_to "RESEARCH",    articles_path %></li>

@@ -4,6 +4,7 @@ class CreateResourceTypes < ActiveRecord::Migration
       t.string :type
       t.string :description
       t.string :tips
+      t.string :r_path
 
       t.timestamps
     end

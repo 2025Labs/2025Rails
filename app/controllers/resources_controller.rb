@@ -7,9 +7,12 @@ class ResourcesController < ApplicationController
   end
 
   def toys_and_games
+    @resource_type = ResourceType.where(r_type: "Toys and Games")
+    @resources = Resource.where(r_type: "Toys and Games")
   end
 
   def camps_and_events
+    @resource_type = ResourceType.where(r_type: "Camps and Events")
     @resources = Resource.where(r_type: "Camps and Events")
   end
 

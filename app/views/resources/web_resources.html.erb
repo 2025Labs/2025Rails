@@ -47,7 +47,7 @@
 	<div class="span3">	
 		<div class="row-fluid">
 			<br><br>
-			<a href="research.html"> <img class="rounded" src="/assets/facts/women7pctCIOs.png"  alt="demo stats"> </a>
+			<%= link_to image_tag("facts/women7pctCIOs.png", :alt => "Only 7% of corporate CIOs are women"),   research_path %>
 			<hr>
     	</div> <!--span12-->
 
@@ -56,10 +56,9 @@
 			</div> <!--span12-->
 		</div> <!--row-->
 
-		<div class="row-fluid">
-			<div class="span12" style="text-align:center">
-				<%= render "layouts/skyscraperad" %>				
-			</div> <!--span12-->
+		<div class="row-fluid" style="text-align:center">
+			<%= render "layouts/skyscraperad" %>				
 		</div> <!--row-->
-	</div> <!--span3-->		
+	</div> <!--span3-->	
+		
 </div>	<!--row-->
