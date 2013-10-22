@@ -2,14 +2,14 @@
 
 FactoryGirl.define do
   factory :resource do
-    r_type "MyString"
+    r_type ""
     engineering_process ""
     machines ""
     energy ""
     computing ""
-    ages "MyString"
-    locations "MyString"
-    title "MyString"
-    description "MyText"
+    ages ""
+    locations ""
+    title ""
+    description ""
   end
 end

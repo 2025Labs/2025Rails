@@ -37,7 +37,8 @@
 	
 	<div class="span3">
 		<div class="row-fluid">
-				<a href="research.html"><img class="rounded" src=<%=asset_path "facts/stat8.png" %> alt="The number 8"></a>
+				<br>Check out our <%= link_to "research",   research_path %> page for studies on gender, race, and socioeconomic diversity in Engineering, as well as income-earning potential of an Engineering degree. <p><p>For example:<br><br>
+				<%= link_to image_tag("facts/stat8.png", :alt => "8"),   research_path %>
 				Eight of the top ten highest-earning degrees for 2013 graduates are in Engineering or Computer Science.	
 		    	<hr>
 		</div>
@@ -49,17 +50,7 @@
 	
 		<div class="row-fluid">
 			<div class="span12" style="text-align:center">
-				<script type="text/javascript"><!--
-				google_ad_client = "ca-pub-2408047913757155";
-				/* right_rectangle */
-				google_ad_slot = "9108243823";
-				google_ad_width = 300;
-				google_ad_height = 250;
-				//-->
-				</script>
-				<script type="text/javascript"
-				src="//pagead2.googlesyndication.com/pagead/show_ads.js">
-				</script>	
+					<%= render "layouts/mediumad" %>				
 			</div> <!--span12-->
 		</div> <!--row-->
 		

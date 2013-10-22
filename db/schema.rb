@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20131009190739) do
 
   create_table "resource_types", force: true do |t|
     t.string   "r_type"
-    t.string   "description"
+    t.text     "description"
     t.string   "tips"
     t.string   "r_path"
     t.datetime "created_at"
@@ -49,6 +49,9 @@ ActiveRecord::Schema.define(version: 20131009190739) do
     t.string   "locations"
     t.string   "title"
     t.text     "description"
+    t.text     "buy_link"
+    t.string   "amazon_img"
+    t.string   "target_audience"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "r_type"

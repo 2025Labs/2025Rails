@@ -76,10 +76,8 @@
 		
 	<div class="span3">
 		<div class="row-fluid">
-			<div class="span12">
-				<%= link_to image_tag("facts/sciedu.png", :alt => "Science is taught daily in just one in five classrooms in the US"),   research_path %>
-					<hr>
-			</div> <!--span12-->
+			<%= link_to image_tag("facts/sciedu.png", :alt => "Science is taught daily in just one in five classrooms in the US"),   research_path %>
+			<hr>
 		</div> <!--row-->
 			
 		<div class="row-fluid">
@@ -87,21 +85,10 @@
 			</div> <!--span12-->
 		</div> <!--row-->
 
-		<div class="row-fluid">
-			<div class="span12" style="text-align:center">
-				<script type="text/javascript"><!--
-				google_ad_client = "ca-pub-2408047913757155";
-				/* right_column */
-				google_ad_slot = "7631510629";
-				google_ad_width = 160;
-				google_ad_height = 600;
-				//-->
-				<!--></script>
-				<script type="text/javascript"
-				src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-				</script>			
-			</div> <!--span12-->
+		<div class="row-fluid" style="text-align:center">
+			<%= render "layouts/skyscraperad" %>				
 		</div> <!--row-->
+		
 	</div> <!--span3-->
 </div><!--row-->
 	

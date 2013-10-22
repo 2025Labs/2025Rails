@@ -3,6 +3,7 @@ Site2025::Application.routes.draw do
   get "resources/toys_and_games"
   get "resources/camps_and_events"
   get "resources/awards_scholarships"
+  get "resources/books"
   get "resources/add"
   #get "resource_types/new"
   #get "resource_types/index"

@@ -15,12 +15,14 @@
     <div class="span7">
 		<% @resource_type.each do |resource_type| %>
 		<h2> <%= resource_type.r_type.html_safe%> </h2>
-		<%= resource_type.description.html_safe%><br><br>
+		<%= resource_type.description.html_safe%><p><p>
+		We've included links to shop for these toys online. We like Amazon for the reviews, because parents share their experiences in great detail. Besides, we do earn a tiny little bit of money for any sales that occur through this channel, which will help us fund more of this research and content! <br><br>
+		
 		<% end %>
 		
 		<% @resources.each do |resource| %>
 		<div class="row-fluid">
-			<div class="span3">
+			<div class="span2">
 				<%= link_to image_tag(resource.engineering_process),   engineering_process_path %>
 				<%= link_to image_tag(resource.machines),   machines_path %>
 				<%= link_to image_tag(resource.energy),   energy_path %>
@@ -28,9 +30,13 @@
 				<p><%= resource.ages %>	
 			</div>
 
-			<div class="span9">
+			<div class="span10">
 				<span class="colortxt2"><%=resource.title.html_safe %></span>
-				<%=resource.description.html_safe %>			
+				<%= resource.description.html_safe %>
+				<p>
+				<% if resource.buy_link %>
+					<a href= <%= resource.buy_link%> target="_blank"><%= image_tag("logos/amazon_buy.gif") %></a><%= resource.amazon_img.html_safe %> 
+				<% end %>		
 			</div> <!--span9-->	
 		</div><!--row-->	
 
@@ -40,7 +46,7 @@
 		</div> <!--row-->
 		<% end %>
 		
-		<a href="mailto:info@2025labs.com?Subject=Suggestion%20For%20Web%20Resources" target="_top"> <img class="center"src="/assets/pics/resource_suggestion.png"> </a>
+		<a href="mailto:info@2025labs.com?Subject=Suggestion%20For%20Web%20Resources" target="_top"><%= image_tag("pics/resource_suggestion.png", :alt => "suggest a resource", :class =>"center") %></a>
 						
     </div> <!--span7-->	
 		
@@ -57,6 +63,9 @@
 		</div> <!--row-->
 
 		<div class="row-fluid" style="text-align:center">
+			<iframe src="http://rcm-na.amazon-adsystem.com/e/cm?t=2025labs-20&o=1&p=14&l=ur1&category=primeent&banner=1A1WA1TZ77GXJ3D2VDG2&f=ifr" width="160" height="600" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+			
+			<br><br><br><br>
 			<%= render "layouts/skyscraperad" %>				
 		</div> <!--row-->
 	</div> <!--span3-->	

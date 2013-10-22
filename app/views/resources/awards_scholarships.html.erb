@@ -1,2 +1,73 @@
-<h1>Resources#awards_scholarships</h1>
-<p>Find me in app/views/resources/awards_scholarships.html.erb</p>
+<% provide(:title, 'Awards and Scholarships') %>
+
+<div class="row-fluid">
+	
+	<div class="span2">
+		<div class="row-fluid">
+			<div class="span12">
+				<%= render "static_pages/resourcesnav" %>
+			</div>
+		</div>	
+	</div>
+	
+	
+    <div class="span7">
+		<% @resource_type.each do |resource_type| %>
+		<h2> <%= resource_type.r_type.html_safe%> </h2>
+		<%= resource_type.description.html_safe%><br><br>
+		<% end %>
+		
+		<div class="row-fluid">
+			<div class="span3">
+				<b>Target Audience</b>
+			</div>
+				
+			<div class="span9">
+				<b>Scholarship Name and Description</b>
+				
+			</div>
+		</div>
+		
+		<% @resources.each do |resource| %>
+		<div class="row-fluid">
+			
+			<div class="span3">	
+				<%= resource.target_audience %>
+			</div>
+
+			<div class="span9">
+				<span class="colortxt2"><%=resource.title.html_safe %></span>
+				<%=resource.description.html_safe %>			
+			</div> <!--span9-->	
+		</div><!--row-->	
+
+		<div class="row-fluid">
+			<div class="span12">
+			</div> <!--span12-->	
+		</div> <!--row-->
+		<% end %>
+		
+		<a href="mailto:info@2025labs.com?Subject=Suggestion%20For%20Web%20Resources" target="_top"><%= image_tag("pics/resource_suggestion.png", :alt => "suggest a resource", :class =>"center") %></a>
+		
+		<a > <img class="center" src=""> </a>
+						
+    </div> <!--span7-->	
+		
+	<div class="span3">	
+		<div class="row-fluid">
+			<br><br>
+			<%= link_to image_tag("facts/women7pctCIOs.png", :alt => "only 7% of corporate CIOs are women"),   research_path %>
+			<hr>
+    	</div> <!--span12-->
+
+        <div class="row-fluid">
+			<div class="span12">				
+			</div> <!--span12-->
+		</div> <!--row-->
+
+		<div class="row-fluid" style="text-align:center">
+			<%= render "layouts/skyscraperad" %>				
+		</div> <!--row-->
+	</div> <!--span3-->	
+		
+</div>	<!--row-->

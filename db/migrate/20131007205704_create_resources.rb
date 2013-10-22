@@ -9,6 +9,9 @@ class CreateResources < ActiveRecord::Migration
       t.string :locations
       t.string :title
       t.text :description
+      t.text :buy_link
+      t.string :amazon_img
+      t.string :target_audience
       
       t.timestamps
     end

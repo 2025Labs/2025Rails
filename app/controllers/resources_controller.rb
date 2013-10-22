@@ -17,7 +17,15 @@ class ResourcesController < ApplicationController
   end
 
   def awards_scholarships
+    @resource_type = ResourceType.where(r_type: "Awards and Scholarships")
+    @resources = Resource.where(r_type: "Awards and Scholarships")
   end
+
+  def books
+     @resource_type = ResourceType.where(r_type: "Books")
+     @resources = Resource.where(r_type: "Books")
+   end
+
 
   def add
   end
