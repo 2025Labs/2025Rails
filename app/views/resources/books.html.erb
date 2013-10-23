@@ -1,0 +1,72 @@
+<% provide(:title, 'Books') %>
+
+<div class="row-fluid">
+	
+	<div class="span2">
+		<div class="row-fluid">
+			<div class="span12">
+				<%= render "static_pages/resourcesnav" %>
+			</div>
+		</div>	
+	</div>
+	
+	
+    <div class="span7">
+		<h2> Engineering Books and Magazines for Kids </h2>
+		This page includes some books that we have taken a look at and have decided are a good resource to introduce Engineering to kids. The books listed are coded according to the engineering area(s) that the resource pertains to, such as the Engineering Process, Machines, Energy, or Computing. 
+		<p><p>We've included links to shop for these books online. We like Amazon for the reviews, because parents share their experiences in great detail. Besides, we do earn a tiny little bit of money for any sales that occur through this channel, which will help us fund more of this research and content! You can also take a look at your local public library. If they don't have it in stock in your local branch, they can often find a way to locate them elsewhere and provide them to you.<br><br>
+	
+		
+		<% @resources.each do |resource| %>
+		<div class="row-fluid">
+			<div class="span2">
+				<%= link_to image_tag(resource.engineering_process),   engineering_process_path %>
+				<%= link_to image_tag(resource.machines),   machines_path %>
+				<%= link_to image_tag(resource.energy),   energy_path %>
+				<%= link_to image_tag(resource.computing),   computing_path %>
+				<p><%= resource.ages %>	
+			</div>
+			
+			<div class="span2">
+				<%= resource.buy_link.html_safe %>
+			</div>
+
+			<div class="span8">
+				<span class="colortxt2"><%=resource.title.html_safe %></span>
+				<%=resource.description.html_safe %>			
+			</div> <!--span9-->	
+		</div><!--row-->	
+
+		<div class="row-fluid">
+			<div class="span12">
+			</div> <!--span12-->	
+		</div> <!--row-->
+		<% end %>
+		
+		<a href="mailto:info@2025labs.com?Subject=Suggestion%20For%20Web%20Resources" target="_top"><%= image_tag("pics/resource_suggestion.png", :alt => "suggest a resource", :class =>"center") %></a>
+		
+		<a > <img class="center" src=""> </a>
+						
+    </div> <!--span7-->	
+		
+	<div class="span3">	
+		<div class="row-fluid">
+			<br><br>
+			<%= link_to image_tag("facts/intelmoneymeaning.png", :alt => "knowledge of the financial benefits and the ability to solve important world programs were key influences that changed teens' perceptions of what it means to be an Engineer and increased their interest in an Engineering career"),   research_path %>
+			<hr>
+    	</div> <!--span12-->
+
+        <div class="row-fluid">
+			<div class="span12">				
+			</div> <!--span12-->
+		</div> <!--row-->
+
+		<div class="row-fluid" style="text-align:center">
+			<iframe src="http://rcm-na.amazon-adsystem.com/e/cm?t=2025labs-20&o=1&p=14&l=ur1&category=primeent&banner=1A1WA1TZ77GXJ3D2VDG2&f=ifr" width="160" height="600" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+			
+			<br><br><br><br>
+			<%= render "layouts/skyscraperad" %>				
+		</div> <!--row-->
+	</div> <!--span3-->	
+		
+</div>	<!--row-->
