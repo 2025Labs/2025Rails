@@ -27,9 +27,10 @@
 				<%= link_to image_tag(resource.machines),   machines_path %>
 				<%= link_to image_tag(resource.energy),   energy_path %>
 				<%= link_to image_tag(resource.computing),   computing_path %>
+				
 				<p><%= resource.ages %>	
 			</div>
-
+			
 			<div class="span10">
 				<span class="colortxt2"><%=resource.title.html_safe %></span>
 				<%= resource.description.html_safe %>
