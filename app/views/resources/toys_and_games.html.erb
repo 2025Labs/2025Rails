@@ -23,16 +23,28 @@
 		<% @resources.each do |resource| %>
 		<div class="row-fluid">
 			<div class="span2">
-				<%= link_to image_tag(resource.engineering_process),   engineering_process_path %>
-				<%= link_to image_tag(resource.machines),   machines_path %>
-				<%= link_to image_tag(resource.energy),   energy_path %>
-				<%= link_to image_tag(resource.computing),   computing_path %>
+				<% unless resource.engineering_process.blank? %>
+					<%= link_to image_tag(resource.engineering_process),   engineering_process_path %>
+				<% end %>
+					
+				<% unless resource.machines.blank? %>
+					<%= link_to image_tag(resource.machines),   machines_path %>
+				<% end %>
 				
+				<% unless resource.energy.blank? %>
+					<%= link_to image_tag(resource.energy),   energy_path %>
+				<% end %>
+				
+				<% unless resource.computing.blank? %>
+					<%= link_to image_tag(resource.computing),   computing_path %>
+				<% end %>
 				<p><%= resource.ages %>	
 			</div>
 			
 			<div class="span10">
-				<span class="colortxt2"><%=resource.title.html_safe %></span>
+				<% unless resource.title.blank? %>
+					<span class="colortxt2"><%=resource.title.html_safe %></span>
+				<% end %>
 				<%= resource.description.html_safe %>
 				<p>
 				<% if resource.buy_link %>

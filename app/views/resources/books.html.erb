@@ -20,10 +20,21 @@
 		<% @resources.each do |resource| %>
 		<div class="row-fluid">
 			<div class="span2">
-				<%= link_to image_tag(resource.engineering_process),   engineering_process_path %>
-				<%= link_to image_tag(resource.machines),   machines_path %>
-				<%= link_to image_tag(resource.energy),   energy_path %>
-				<%= link_to image_tag(resource.computing),   computing_path %>
+					<% unless resource.engineering_process.blank? %>
+						<%= link_to image_tag(resource.engineering_process),   engineering_process_path %>
+					<% end %>
+
+					<% unless resource.machines.blank? %>
+						<%= link_to image_tag(resource.machines),   machines_path %>
+					<% end %>
+
+					<% unless resource.energy.blank? %>
+						<%= link_to image_tag(resource.energy),   energy_path %>
+					<% end %>
+
+					<% unless resource.computing.blank? %>
+						<%= link_to image_tag(resource.computing),   computing_path %>
+					<% end %>
 				<p><%= resource.ages %>	
 			</div>
 			
