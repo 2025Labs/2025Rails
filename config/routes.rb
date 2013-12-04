@@ -15,6 +15,7 @@ Site2025::Application.routes.draw do
    match '/contact', to: 'static_pages#contact', via: 'get'
    match '/about_us', to: 'static_pages#about_us', via: 'get'
    match '/get_started', to: 'static_pages#get_started', via: 'get'
+   match '/blog', to: 'static_pages#blog', via: 'get'
    
    match '/intro_to_engineering', to: 'static_pages#intro_to_engineering', via: 'get'
    match '/engineering_process', to: 'static_pages#engineering_process', via: 'get'
