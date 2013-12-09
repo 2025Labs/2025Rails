@@ -1,0 +1,36 @@
+<% provide(:title, 'Introducing Computing and Programming to Kids: 2025 Labs') %>
+<% provide(:description, 'Any study of engineering is incomplete without an overview of computing. In this section, we describe the different parts of computers using a traditional desktop computer as an example.') %>
+
+
+<div class="row-fluid">
+
+	<div class="span2">
+		<%= render "contentnav" %>
+	</div>
+	<div class="span7">
+		<%= image_tag("pics/mttag.png", :alt => "Materials Icon", :class => "iconleft") %>	
+		<h2>&#011;  Materials</h2>
+		<h5><span class="sectionheader">La La La Materials.</span></h5> 
+		Materials are good. Materials are nice. Materials are seldom made from things like sugar and spice.
+				<p><p>
+					
+	</div> <!--span7-->		
+
+
+	<div class="span3">			
+		<br><br>
+		<%= link_to image_tag("facts/women20pctCS.png", :alt => "Women hold only 20% of computer science jobs"),   research_path %>
+		<hr>
+
+		<div class="row-fluid">
+			<div class="span12">				
+			</div> <!--span12-->
+		</div> <!--row-->
+
+		<div class="row-fluid" style="text-align:center">
+			<%= render "layouts/skyscraperad" %>						
+		</div> <!--row-->	
+
+	</div> <!--span3-->
+
+</div>	<!--row-->

@@ -11,10 +11,19 @@ class StaticPagesController < ApplicationController
   def get_started
   end
 
+  def getstarted2
+  end
+  
   def intro_to_engineering
   end
   
   def engineering_process
+  end
+  
+  def structures
+  end
+  
+  def materials
   end
   
   def machines

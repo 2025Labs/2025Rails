@@ -15,10 +15,13 @@ Site2025::Application.routes.draw do
    match '/contact', to: 'static_pages#contact', via: 'get'
    match '/about_us', to: 'static_pages#about_us', via: 'get'
    match '/get_started', to: 'static_pages#get_started', via: 'get'
+   match '/getstarted2', to: 'static_pages#getstarted2', via: 'get'
    match '/blog', to: 'static_pages#blog', via: 'get'
    
    match '/intro_to_engineering', to: 'static_pages#intro_to_engineering', via: 'get'
    match '/engineering_process', to: 'static_pages#engineering_process', via: 'get'
+   match '/structures', to: 'static_pages#structures', via: 'get'
+   match '/materials', to: 'static_pages#materials', via: 'get'
    match '/machines', to: 'static_pages#machines', via: 'get' 
    match '/energy', to: 'static_pages#energy', via: 'get'
    match '/computing', to: 'static_pages#computing', via: 'get'
