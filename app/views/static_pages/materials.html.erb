@@ -7,17 +7,42 @@
 	<div class="span2">
 		<%= render "contentnav" %>
 	</div>
-	<div class="span7">
+	<div class="span8">
 		<%= image_tag("pics/mttag.png", :alt => "Materials Icon", :class => "iconleft") %>	
 		<h2>&#011;  Materials</h2>
-		<h5><span class="sectionheader">La La La Materials.</span></h5> 
-		Materials are good. Materials are nice. Materials are seldom made from things like sugar and spice.
-				<p><p>
+		
+		<div class="row-fluid">
+			<div class="span3">
+				<div class="mainideas">
+					<div class="mainideasheader">
+						Main Ideas
+					</div> <!-- main idea header close -->
+					<br>
+					<a class="mainideastopic" <%= link_to "Would you build a bridge out of balsa wood? Or a basketball out of glass?", :anchor => "Mats1" %></a>								
+					<br><br>
+					<a class="mainideastopic"<%= link_to "People have been thinking about materials for a very long time - in fact, we have named key periods of history by materials in use at the time", :anchor => "Mats2" %></a>
+					<br><br>
+				</div> <!-- main ideas section close -->
+			</div> <!-- span 3 for main ideas close -->
+			
+			<div class="span9">
+				<h5><a id="Mats1"><span class="sectionheader">La La La Materials.</span></a></h5> 
+				Materials are good. Materials are nice. Materials are seldom made from things like sugar and spice.
+						<p><p>
+
+				<h5><a id="Mats2"><span class="sectionheader">La La La Materials.</span></a></h5> 
+					Materials are good. Materials are nice. Materials are seldom made from things like sugar and spice.
+					<p><p>
+			</div> <!--span 9 for contents-->
+		</div> <!-- row definition for main content section-->
+		
+		
+	
 					
-	</div> <!--span7-->		
+	</div> <!--span 8 for middle section -->		
 
 
-	<div class="span3">			
+	<div class="span2">			
 		<br><br>
 		<%= link_to image_tag("facts/women20pctCS.png", :alt => "Women hold only 20% of computer science jobs"),   research_path %>
 		<hr>
@@ -31,6 +56,6 @@
 			<%= render "layouts/skyscraperad" %>						
 		</div> <!--row-->	
 
-	</div> <!--span3-->
+	</div> <!--span 2 for stats-->
 
 </div>	<!--row-->
