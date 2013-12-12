@@ -8,15 +8,42 @@
 		<%= render "contentnav" %>
 	</div>
 
-	<div class="span7">
-		<%= image_tag("pics/ctag.png", :alt => "Computing Icon", :class => "iconleft") %>	<h2>&#011;  Computing</h2>
-      	<h5><span class="sectionheader">&quot;Computing&quot; refers to the various activities that are supported, enabled, or performed by a computer of some type</span></h5> <p><p> A computer is a device that can perform a variety of complex operations that can be described logically. &quot;Computer&quot; literally means a thing that computes, i.e. perform mathematical functions like adding, subtracting, multiplying, and so on. Of course, computers can be used to do a wide variety of sophisticated tasks. Any work you can describe in some way, you can program, as long as the physical functions you need (such as sending some information onto a network using a physical interface) are supported by the device. 
+	<div class="span8">
+		<%= image_tag("pics/ctag.png", :alt => "Computing Icon", :class => "iconleft") %>	
+		<h2>&#011;  Computing</h2>
+		
+			<div class="row-fluid">
+				<div class="span3">
+					<div class="mainideas">
+						<div class="mainideasheader">
+							Main Ideas
+						</div> <!-- main idea header close -->
+						<br>
+						<a class="mainideastopic" <%= link_to '"Computing" refers to the various activities that are supported, enabled, or performed by a computer of some type', :anchor => "Computing" %></a>								
+						<br><br>
+						<a class="mainideastopic"<%= link_to 'Computers have Inputs, Outputs, Functions, and Storage and are driven by a "brain" typically called a CPU', :anchor => "Computers" %></a>
+						<br><br>
+						<a class="mainideastopic"<%= link_to "Laptops, Tablets, Ultrabooks, and Smartphones are computers, too", :anchor => "Laptops" %></a>
+						<br><br>
+						<a class="mainideastopic"<%= link_to "Computer Networks enable us to send email messages to friends, surf the Internet, buy online, share updates on social networking sites, and print to shared devices", :anchor => "Networks" %></a>
+						<br><br>
+						<a class="mainideastopic"<%= link_to "Information gets to its destination on the Internet through addressing and routing, similar to addressing a letter and routing it through the US Postal Service", :anchor => "Routing" %></a>
+						<br><br>
+						<a class="mainideastopic"<%= link_to "The world is increasingly computerized, and computers are revolutionizing managing your finances, your career, your car, your errands, and your social life", :anchor => "Revolutionizing" %></a>
+						<br><br>
+						<a class="mainideastopic"<%= link_to "Summary", :anchor => "Summary" %></a>
+						<br><br>
+					</div> <!-- main ideas section close -->
+				</div> <!-- span 3 for main ideas close -->
+				
+		<div class="span9">
+      	<h5><a id="Computing"><span class="sectionheader">&quot;Computing&quot; refers to the various activities that are supported, enabled, or performed by a computer of some type</span></a></h5> <p><p> A computer is a device that can perform a variety of complex operations that can be described logically. &quot;Computer&quot; literally means a thing that computes, i.e. perform mathematical functions like adding, subtracting, multiplying, and so on. Of course, computers can be used to do a wide variety of sophisticated tasks. Any work you can describe in some way, you can program, as long as the physical functions you need (such as sending some information onto a network using a physical interface) are supported by the device. 
 		<p><p>
 		For example, you could in theory program a rocket to go to the moon by itself, if it had the physical functions built in to it that rockets require. The physical portions of the device are the <%= link_to "machine",   machines_path %>; the programming that describes how to start up the rocket, lift off, navigate to the moon, and land comprise the &quot;computing&quot; portion of the device. The computing portion of the machine has to take in all the inputs (like ground temperature, wind direction and, speed), make the non-computer portion work happen (fire up the engines), and provide output as to how the work is proceeding (like altitude data or engine temperature provided to Mission Control). 		
 		<p><p>
 		In this section, we're going to describe the different parts of computers using a traditional desktop computer as an example. We'll use portable computing devices as a point of comparison to show they have certain components in common, with just a different look and feel. Next, you'll get both an historical and functional overview of the Internet. It's difficult to overemphasize the changes that the Internet has brought to our lives, yet many of us know very little about what it is and how we actually send information using the internet. Finally, we'll briefly discuss the expanding use of computers in different devices, and present some of the challenges that have arisen from our rapidly expanding reliance on computing.
 		<p><p>
-		<h5><span class="sectionheader">Computers have Inputs, Outputs, Functions, and Storage and are driven by a "brain" typically called a CPU </span></h5>
+		<h5><a id="Computers"><span class="sectionheader">Computers have Inputs, Outputs, Functions, and Storage and are driven by a "brain" typically called a CPU </span></a></h5>
 		All computers, whether it's a laptop, iPad or the one managing your car, have some common components. In the case of a traditional desktop computer, the keyboard and mouse are key input sources, while the monitor is a key output. There can be other inputs (e.g., a USB flash drive can be used as a source of data to be placed on the computer), and there may be other outputs, such as the speakers, headphone jacks, etc. In addition, a network interface can provide bring information in and send information out (think of sending and receiving email as an example).
 		<br><br> 
 		<%= image_tag("pics/computerarch2.png", :alt => 'diagram of computer with parts labeled') %>
@@ -29,7 +56,7 @@
 		<p><p>
 		The "brain" that controls the computer is called a CPU (for Central Processing Unit), or sometimes just "processor". There are many different types of processors, some special-purpose, but Intel and AMD provide the bulk of computer and laptop processors in the US. 
 		<p><p>
-		<h5><span class="sectionheader">Laptops, Tablets, Ultrabooks, and Smartphones are computers, too</span></h5>
+		<h5><a id="Laptops"><span class="sectionheader">Laptops, Tablets, Ultrabooks, and Smartphones are computers, too</span></a></h5>
 		Laptops, tablets, ultrabooks, and smartphones are also computers. Laptops and ultrabooks are simply computers designed with portability in mind, so that they can be used in different locations, some of which may not have electricity outlets (or network connections for that matter). 
 		<p><p>
 			Tablets are computers, too; they just look a little bit different. The touchscreen is a new input that most traditional computers do not have (although some ultrabooks these days do). And, instead of a traditional keyboard, you get a keyboard area of the display that will appear when you are expected to type something - and then it will disappear when you are done. 
@@ -39,7 +66,7 @@
 		<p><p>
 		In fact, one key differentiator of a smartphone as compared to traditional computers is the built-in location-based services, which allow the phone (or tablet) to know exactly where you are, and to use that information to present information to you, such as surrounding businesses, maps, and reviews. One thing you may not know is that your location information is typically embedded in the pictures you take with the device, and can be extracted from the pictures if you share them online, a factor you should consider if you are sharing pictures taken at your home to a public site. 
 		<p><p>			
-		<h5><span class="sectionheader">Computer Networks enable us to send email messages to friends, surf the Internet, buy online, share updates on social networking sites, and print to shared devices</span></h5>
+		<h5><a id="Networks"><span class="sectionheader">Computer Networks enable us to send email messages to friends, surf the Internet, buy online, share updates on social networking sites, and print to shared devices</span></a></h5>
 		The Dot Com boom, which peaked in March 2000, transformed the way we get and share information, make purchases, manage finances, and do business. The key advance of the Dot Com boom was the transformation of the connected Internet from something mostly used by scientists, engineers, and government agencies into a graphical, easy-to-use environment we called the World Wide Web, and which we accessed using these new things called "web browsers". Suddenly, everyone&#8212;not just technical experts&#8212;could access and use the Internet in their daily lives.
 		<p><p>
 		However, the Internet was created well in advance of that. In fact, way back in 1969, the foundations of the Internet were formed when, in December 1969, the the Defense Advanced Research Projects Agency (DARPA) brought up an experimental four-node network called the ARPANET. The US Department of Defense began funding research on computer networks in the 1960s through grants to universities and private corporations. The ARPANET work formed the foundation of the modern Internet. Much of the network protocol standards we rely on for the operation of the Internet were defined and documented in specifications called "RFCs" (for Request for Comments), which were maintained for a very long time on an FTP site on the Department of Defense network. (Us old-timers can recall FTP'ing to nic.ddn.mil to grab RFC documents. Now you can find them among the IETF - Internet Engineering Task Force - documents at www.ietf.org.) The ARPANET project led the way in defining the key initial standards for operating an Internet in what's called the TCP/IP (for Transmission Control Protocol/Internet Protocol) suite of protocols. Those standards include file transfer (FTP), email (SMTP), and many many more that we still rely on. 
@@ -50,24 +77,28 @@
 		<p><p>
 		In the current political environment, there are efforts to curb government spending on many fronts. Perhaps you, like some, think that the government should reduce spending on primary research. Perhaps you are planning to send an email to your congressperson, or post a comment to WallStreetJournal.com, or write on your congressperson's Facebook wall. In that case, don't forget that the technology you're using to do it came out of primary research funded by the government through DARPA! 
 		<p><p>
-		<h5><span class="sectionheader">Information gets to its destination on the Internet through addressing and routing, similar to addressing a letter and routing it through the US Postal Service</span></h5>
+		<h5><a id="Routing"><span class="sectionheader">Information gets to its destination on the Internet through addressing and routing, similar to addressing a letter and routing it through the US Postal Service</span></a></h5>
 		Fundamental to any notion of a connected Internet is the idea of being able to <span class="colortxtlittle">route</span> information from its source location to wherever it needs to go. Think of an email that someone wants to send, or a file that someone wants to upload to a server somewhere. That file or email will be broken into small chunks called "packets" and sent over the network to the desired destination. But, how does it know how to get there?
 		<p><p>
 		If you send a letter using the US Post Office (what we call "Snail Mail", since it is much slower than sending an email), you specify where you want your letter to go by writing an address on the envelope. Similarly, routing over the Internet uses addresses of some type, which could be an email address ("mliu@2025labs.com"), a web site address ("http://www.2025labs.com"), or an IP address (like if I wanted to see if my web site was up, and entered a command "ping 184.168.235.1" from a command prompt). 
 		<p><p>
 		The concept of network routing can get quite sophisticated. However, a very lightweight summary follows: Names are <span class="colortxtlittle">resolved</span> to network addresses using a standard called DNS, for Domain Name System. There are devices called "routers" that route packets to where they need to go. Each router knows the networks it is directly connected to and can route among them, and has a method, like a default path, for any destinations it does not know. There are important servers called "root name servers", of which there are 13 globally, that know about all of the authoritative name servers for the top-level domains (.com, .org, .biz, .au, etc.). Something called the "Internet Backbone" connects the various large interconnected networks across the globe, using high-throughput routers, connecting countries and continents, often using the big Internet Service Providers (ISPs). 
 		<p><p>						
-		<h5><span class="sectionheader">The world is increasingly computerized, and computers are revolutionizing managing your finances, your career, your car, your errands, and your social life.</span></h5>
+		<h5><a id="Revolutionizing"><span class="sectionheader">The world is increasingly computerized, and computers are revolutionizing managing your finances, your career, your car, your errands, and your social life.</span></a></h5>
 		More and more of the devices we rely on every day are computerized: modern televisions, printers, even cars. Our lives are increasingly computerized as well, as we start to spend more time on email and Facebook than in real, face-to-face communications. There are challenges in this evolution to an increasingly computer enabled world. Having personal information online (whether in our Facebook account or attached to our web-accessible bank account) means that identity theft is now easier. Who needs to steal your mail when they can simply hack into a bank and steal millions of identities or millions of dollars! Think of the electricity grid, telephone system, or other public utilities; if they are computerized and accessible, then the potential is there for terrorists or enemy countries to create damage remotely. Recently a hacker demonstrated the ability to hack into a car and make the car perform certain functions, like overriding the driver and speeding up. The modern computerized world has revolutionized and improved our world. But, it has also added new risks, and is driving new efforts to secure our lives in cyberspace.
 		<p><p>
-		<h5><span class="sectionheader">Summary</span></h5>
+		<h5><a id="Summary"><span class="sectionheader">Summary</span></a></h5>
 		All computers have some predictable components in common&#8212;inputs, outputs, functions, storage and CPUs&#8212;although they may vary in look and feel. A great deal of our computer usage involves accessing the Internet, which has evolved significantly since its beginnings way back in 1969. It was not until the creation of graphical way to navigate the Internet via web browsers, which created the the Dot Com boom of the late 1990s, that we very rapidly transformed our access to the Internet to the widespread public usage we see today. Our reliance on the Internet and computers has grown dramatically, such that digital security is recognized as one the great engineering challenges of our time. As a matter of fact, <a href="http://www.engineeringchallenges.org/cms/8996/9042.aspx" target="_blank">Securing Cyberspace</a> is one of the <a href="http://www.engineeringchallenges.org/cms/8996/9221.aspx" target="_blank">Grand Challenges</a>&#8212;the most critical engineering problems to solve&#8212;put forth by the National Academy of Engineering (NAE).
 		<p><p>
 			This brings us to the end of our Introduction to Engineering. We hope that you have a better sense of the Engineering landscape and feel more empowered to help introduce kids to this increasingly important area for jobs. We need more engineers!
-	</div> <!--span7-->		
+	
+		</div> <!--span 9 for contents-->
+	</div> <!-- row definition for main content section-->
+	
+	</div> <!--span8-->		
 		
 				
-	<div class="span3">			
+	<div class="span2">			
 		<br><br>
 		<%= link_to image_tag("facts/women20pctCS.png", :alt => "Women hold only 20% of computer science jobs"),   research_path %>
 		<hr>
@@ -81,6 +112,6 @@
 			<%= render "layouts/skyscraperad" %>						
 		</div> <!--row-->	
 			
-	</div> <!--span3-->
+	</div> <!--span2-->
 			
 </div>	<!--row-->
