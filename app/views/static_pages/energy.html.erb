@@ -8,23 +8,49 @@
 		<%= render "contentnav" %>
 	</div> <!-- span2 -->
 
-	<div class="span7">
+	<div class="span8">
 		<div class="row-fluid">
-			<div class="span12">
+		
 				<%= image_tag("pics/entag.png", :alt => "Energy Icon", :class => "iconleft") %>
 				<h2>&#011;  Energy</h2>
-				<h5><span class="sectionheader">There is no Engineering without Energy</span></h5>
+				
+					<div class="row-fluid">
+						<div class="span3">
+							<div class="mainideas">
+								<div class="mainideasheader">
+									Main Ideas
+								</div> <!-- main idea header close -->
+								<br>
+								<a class="mainideastopic" <%= link_to "There is no Engineering without Energy", :anchor => "Energy" %></a>								
+								<br><br>
+								<a class="mainideastopic"<%= link_to "There are a variety of Energy Sources that can power our modern world", :anchor => "Sources" %></a>
+								<br><br>
+								<a class="mainideastopic"<%= link_to "Energy is often harnessed at a different time and place than it is use", :anchor => "Harnessed" %></a>
+								<br><br>
+								<a class="mainideastopic"<%= link_to "The Electricity Grid distributes energy from its sources to consumption, and matches supply to demand", :anchor => "Grid" %></a>
+								<br><br>
+								<a class="mainideastopic"<%= link_to "Energy can be stored for future use to help match supply with demand and prevent brownouts and blackouts", :anchor => "Stored" %></a>
+								<br><br>
+								<a class="mainideastopic"<%= link_to "Energy Conversion takes energy from one form to another (and sometimes back again)", :anchor => "Conversion" %></a>
+								<br><br>
+								<a class="mainideastopic"<%= link_to "Summary", :anchor => "Summary" %></a>
+								<br><br>
+							</div> <!-- main ideas section close -->
+						</div> <!-- span 3 for main ideas close -->
+						
+				<div class="span9">
+				<h5><a id="Energy"><span class="sectionheader">There is no Engineering without Energy</span></a></h5>
 				In order to power the technology in our daily lives, we harness it from a variety of sources (fossil fuels, wind, etc.), move it to where we need it (think of the power lines you see everywhere), potentially store it for later use (like in a battery or as potential energy in a hydroelectric dam), and then consume it. This section covers each part of the energy life cycle, but first it's important to get an historical perspective on energy sources.
 				<p><p>
 				As we mentioned in the <%= link_to "machines",   machines_path %> section, prior to the Industrial Revolution, people had access to only four sources of energy&#151;water, wind, people and animals&#151;to power their machines. They harnessed the power of running water in rivers by using water wheels to turn turbines to mill flour for bread. They harnessed the power of the wind using windmills. They used the power of people or animals to row boats, turn wheels, and lift heavy items. 
 				<p><p>
 				That all changed in 1781, when James Watt's steam engine ushered in the Industrial Revolution. New machines that were powered initially by burning coal and eventually other fossil fuels such as gas changed the face of the industrialized world. In 1880, Thomas Edison patented the first commercially viable lightbulb, marking the beginning of widespread use of electricity as a power source. It's important to note that these inventors weren't the only or even the first people working with steam and electricity. However, they were the first to produce viable  products using these power sources, which led their widespread adoption. By the 1920's, power companies started working together to create what we call the electricity grid: the power source for our lights, heat, air conditioning, televisions, microwave ovens, and the computer you are using to read this web page. 
-	  		</div>
-		</div>							
+	  		<!--</div>-->
+		<!--</div>-->							
 
 		<div class="row-fluid">
 			<div class="span6">
-				<h5><span class="sectionheader">There are a variety of <span class="shkeyword">Energy Sources</span> that can power our modern world</span></h5>
+				<h5><a id="Sources"><span class="sectionheader">There are a variety of <span class="shkeyword">Energy Sources</span> that can power our modern world</span></a></h5>
 				There are a variety of ways that we generate energy to fuel our modern world, many of which we've been using for hundreds or thousands of years. Some of these are considered renewable, like wind and sunlight, which means that we are not in danger of running out of them. Some of these are being consumed faster than they are being created, such as coal, which means that we will some day run out of that energy source. The sections below highlight some of the key sources of energy used to power our world.	
 				<p><p>
 			</div>
@@ -83,6 +109,7 @@
 				<br>
 				<%= image_tag("pics/PoplarFuel1.png", :alt => "Trees connected to a gas pump") %>
 			</div> <!--span 3-->
+			
 		</div> <!-- row of 7 subdivided into 9 and 3-->	
 
 		<div class="row-fluid">
@@ -112,7 +139,7 @@
 
 		<div class="row-fluid">
 			<div class="span12">
-				<h5><span class="sectionheader">Energy is often harnessed at a different time and place than it is used</span></h5>
+				<h5><a id="Harnessed"><span class="sectionheader">Energy is often harnessed at a different time and place than it is used</span></a></h5>
 			</div>
 		</div>
 
@@ -145,7 +172,7 @@
 
 	<div class="row-fluid">
 		<div class="span12">
-			<h5><span class="sectionheader">The Electricity Grid distributes energy from its sources to consumption, and matches supply to demand</span></h5>
+			<h5><a id="Grid"><span class="sectionheader">The Electricity Grid distributes energy from its sources to consumption, and matches supply to demand</span></a></h5>
 		</div>
 	</div>
 	
@@ -173,12 +200,12 @@
 
 	<div class="row-fluid">
 		<div class="span12">
-			<h5><span class="sectionheader">Energy can be stored for future use to help match supply with demand and prevent brownouts and blackouts</span></h5>
+			<h5><a id="Stored"><span class="sectionheader">Energy can be stored for future use to help match supply with demand and prevent brownouts and blackouts</span></a></h5>
 			Energy storage is an emerging hot topic, as California recently became the first state to adopt a law that requires utilities to invest in energy storage. As more energy is generated from renewable, but volatile, sources like wind and sun, it becomes more important to be able to capture excess energy generated at peak availability so that it can be used at times of less availability. On October 17, 2013, California put into force a requirement for state utilities to invest in 1.3 gigawatts of storage capacity by 2020.
 			<p><p>
 			There are a variety of ways that energy can be stored, and companies are exploring new ways to store energy. Electricity is generally used as it is generated; in order for electricity to be stored, it must be converted to another energy source. For example, to <i>generate</i> electricity we sometimes use the force of water spilling over a hydroelectric dam, which leverages the potential energy of gravity in the water at the top of the dam -- but did you know that we can use excess electricity to <i>pump</i> water to the top of a dam to <i>store</i> the energy for future use? According to <a href="http://en.wikipedia.org/wiki/Energy_storage" target="_blank">Wikipedia</a>, Washington and Oregon already use excess electricity to pump water to high reservoirs to capture the energy as potential energy that will re-generate electricity later at a time of higher demand. Other technologies being investigated for energy storage are flywheels and batteries. California's new energy storage mandate is likely to spur investment and investigation into optimal means for energy storage. 
 			<p><p>
-			<h5><span class="sectionheader">Energy Conversion takes energy from one form to another (and sometimes back again)</span></h5>
+			<h5><a id="Conversion"><span class="sectionheader">Energy Conversion takes energy from one form to another (and sometimes back again)</span></a></h5>
 			Wind is a potential source of energy, as is water at the top of a hydroelectric dam. But we do not plug our toaster into the water in the dam; we convert energy from one form to another. Think also about a battery in a hand-held game console, like a Nintendo DS. We take batteries out of a package we bought from the store, put them in the device, and then, when we turn on the device, we can get <i>electric energy</i> for our device from the batteries. 
 			<p><p>We can use the force of water spilling over a hydroelectric dam to generate electricity. When you allow water to fall over the dam, the force of gravity pulls the water to the lower level of the water. But how does this result in electricity? The answer is that the water flows over turbines, and the force of the water falling turns the turbines. The mechanical energy from the rotating turbines is converted to electrical energy through a process called electromagnetic induction. The basic principle behind electromagnetic induction is that a rotating magnetic field <i>induces</i> an electric current, so that placing magnets or magnetic coils on the shaft of a turbine will induce a current when the shaft is rotated.  Wind Power uses wind to turn turbines to do the same. Nuclear Power leverages the energy released from nuclear fission; this energy release creates heat, which generates steam, which turns a steam turbine, which produces electricity by induction as well. (Did you know that Nuclear Reactors essentially generate electricity by <i>boiling water</i>?) <p><p>
 			Here are a few more examples of how we convert energy from one form to another:
@@ -191,17 +218,20 @@
 			<p><p>
 			When you convert from one type to another, there may be some energy lost to the surrounding environment. For example, when you burn something for energy, some energy may be dissipated as light and heat in the surrounding air, and that can no longer be captured. (Think of when you run your oven, and your kitchen gets hot. On a hot day, you'd rather heat your dinner <i>without</i> heating your kitchen as well!) That drives notions of "efficiency" of various methods and continual efforts to improve efficiency.
 
-			<h5><span class="sectionheader">Summary</span></h5>
+			<h5><a id="Summary"><span class="sectionheader">Summary</span></a></h5>
 			Energy is fundamental to engineering. We get energy to power the technology in our world from both renewable and nonrenewable sources. Energy can be stored for future use. The electricity grid distributes energy from diverse original sources&#151;burning coal, nuclear power plants, hydroelectric dams, etc.&#151; to consumers as electricity. We don't always know the source of the energy we are using at the time we are using it, because we get our power from the electricity grid, which harnesses energy from many sources and converts energy from various forms to other forms in the process. Thus, in this section you've learned about how we get, store, and consume energy to power our technology. Add that to your knowledge of the processes engineers use to create and maintain technology and your understanding of machines as an example of technology, and you've pretty good overview of the engineering landscape from the industrial revolution until about the 1960s. In order to get current, you need to add <%= link_to "computing",   computing_path %> to your knowledge base, which is where we turn next. 
 		</div>
 	</div>
-
+	
+	</div> <!--span 9 for contents-->
+  </div> <!-- row definition for main content section-->
+  </div> <!--span 8 for middle section -->
 <!-- TO HERE -->			
-</div> <!-- class of 7 subdivided into 8 and 4-->
+</div> <!-- class of 8 subdivided into 8 and 4-->
 
-	<div class="span3">
+	<div class="span2">
 		<div class="row-fluid">
-			<div class="span12">
+			
 				<br><br><br>
 				<i>Engineering demographics from a 2011 ASEE study:</i>
 				<br>
@@ -210,7 +240,7 @@
 				Women comprise 18 percent of Engineering undergraduate students	
 				<br><br><br>
 			    <hr>
-			</div> <!--span12-->
+			
 		</div> <!-- row -->
 	
 		<div class="row-fluid">
@@ -223,6 +253,6 @@
 			<%= render "layouts/skyscraperad" %>				
 		</div> <!--row-->
 		
-	</div> <!--span3-->	
-		
+	</div> <!--span2-->	
+  		
 </div>	<!--row-->
