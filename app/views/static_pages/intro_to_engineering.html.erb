@@ -33,6 +33,28 @@
 
 		<div class="row-fluid">
 			<div class="span1">
+				<%= link_to image_tag("pics/mttag.png", :alt => "Materials Icon", :class => "iconleft"), materials_path %>	
+			</div> <!-- span 1 -->
+			
+			<div class="span11">
+				<b><%= link_to "Materials",  materials_path %></b> You will learn about some history with respect to materials discovery, key properties of materials, selecting materials as part of the engineering design process based on planned functions, and some details about specific materials of interest in our modern era.
+			</div> <!-- span 11 -->
+		</div> <!-- row -->
+		</br>
+
+		<div class="row-fluid">
+			<div class="span1">
+				<%= link_to image_tag("pics/stag.png", :alt => "Structures Icon", :class => "iconleft"), structures_path %>
+			</div> <!-- span 1 -->
+			
+			<div class="span11">
+				<b><%= link_to "Structures",  structures_path %></b> You will learn about key concepts in the engineering of structures, including the definition of a "structure", forces that act on structures, and key elements such as beams, columns, and arches.
+			</div> <!-- span 11 -->
+		</div> <!-- row -->
+		</br>
+
+		<div class="row-fluid">
+			<div class="span1">
 				<%= link_to image_tag("pics/mtag.png", :alt => "Machines Icon", :class => "iconleft"), machines_path %>
 			</div> <!-- span 1 -->
 			
@@ -41,7 +63,7 @@
 			</div> <!-- span 11 -->
 		</div> <!-- row -->
 		</br>
-
+		
 		<div class="row-fluid">
 			<div class="span1">
 				<%= link_to image_tag("pics/entag.png", :alt => "Energy Icon", :class => "iconleft"), energy_path %>
