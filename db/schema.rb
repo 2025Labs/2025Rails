@@ -42,6 +42,8 @@ ActiveRecord::Schema.define(version: 20131009190739) do
 
   create_table "resources", force: true do |t|
     t.string   "engineering_process"
+    t.string   "structures"
+    t.string   "materials"
     t.string   "machines"
     t.string   "energy"
     t.string   "computing"

@@ -2,6 +2,8 @@ class CreateResources < ActiveRecord::Migration
   def change
     create_table :resources do |t|
       t.string :engineering_process
+      t.string :structures
+      t.string :materials
       t.string :machines
       t.string :energy
       t.string :computing
