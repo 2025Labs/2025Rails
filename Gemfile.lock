@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/thinkswan/cycle2-rails.git
+  revision: 287aadfd198805a8efd4c8edc593ae78f347fde5
+  branch: rails4
+  specs:
+    cycle2-rails (1.1.0)
+      jquery-rails (>= 2.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -170,6 +178,7 @@ DEPENDENCIES
   capistrano-ext
   capybara (= 1.1.2)
   coffee-rails (~> 4.0.0)
+  cycle2-rails!
   factory_girl_rails (= 4.1.0)
   jbuilder (~> 1.2)
   jquery-rails

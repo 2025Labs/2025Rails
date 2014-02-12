@@ -28,6 +28,8 @@ end
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'cycle2-rails', git: 'git://github.com/thinkswan/cycle2-rails.git', branch: 'rails4'
+
 
 group :test do
   gem 'capybara', '1.1.2'
