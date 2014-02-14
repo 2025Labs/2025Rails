@@ -6,5 +6,9 @@ class ArticlesController < ApplicationController
     @articles = Article.all
   end
   
+  def dashboard
+  end
+  
+  
 
 end

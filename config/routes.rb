@@ -27,6 +27,7 @@ Site2025::Application.routes.draw do
    match '/computing', to: 'static_pages#computing', via: 'get'
    
    match '/research', to: 'articles#index', via: 'get'
+   match '/dashboard', to: 'articles#dashboard', via: 'get'
    match '/resources', to: 'resource_types#index', via: 'get'
    match '/web_resources', to: 'resource_types#web_resources', via: 'get'
    #match '/web_resources', to: 'resources#web_resources', via: 'get'

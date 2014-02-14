@@ -35,9 +35,18 @@
 							<li><%= link_to "CAMPS AND EVENTS",    resources_camps_and_events_path, html_options = {:alt=>"Engineering for Kids Camps and Events"}  %></li>
 							<li><%= link_to "SCHOLARSHIPS",    resources_awards_scholarships_path, html_options = {:alt=>"Engineering for Kids Scholarships"}  %></li>
 							<li><%= link_to "BOOKS",    resources_books_path, html_options = {:alt=>"Engineering for Kids Books"}  %></li>
+
 						</ul>
 					</li>
-					<li><%= link_to "RESEARCH",    research_path %></li>
+					
+					<li><%= link_to "RESEARCH",    research_path %>
+						<ul>
+							<li><%= link_to "DASHBOARD",   dashboard_path, html_options = {:alt=>"Dashboards tracking Equity in Engineering"}  %></li>
+
+						</ul>
+					</li>
+					
+
 			    </ul>
 			</nav><!--nav-->
 

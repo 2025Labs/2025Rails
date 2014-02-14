@@ -1,5 +1,15 @@
 @import "bootstrap";
 
+/* Styling for dashboard */
+.dashboardbkgd{
+	background-color: #f1f1f1;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:20px;
+	padding-top:20px;
+}
+
+
 /* Styling for the survey banner*/
 .banner {
   font-weight: bold;
@@ -287,6 +297,7 @@ nav ul li a {
     margin-top:75px; 
 
 }
+
 
 /*
    cycle2 slide show code
