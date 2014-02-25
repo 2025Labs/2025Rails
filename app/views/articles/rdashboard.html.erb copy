@@ -1,0 +1,161 @@
+<div class="row-fluid">
+	<div class="span10">
+		<div class="row-fluid">
+			<div class="span12">
+				<h2>Dashboard - State of Diversity in Racial / Ethnic Terms</h2>
+		<p>Our family is a multicultural family, which I think makes our family experience that much richer. However, race "check boxes" are a sensitive, somewhat complicated topic for our family. It seems trite to reduce someone down to a check box, and an increasing number of us would have to check more than one box. So, we approach the use of race/ethnicity check box data with a fair bit of trepidation. It would be nice to get to a place where race and ethnicity check boxes don't matter anymore. <p><p>We might know that we are at that destination if, for example, the demographics of Engineering undergraduate studies look very similar to that of US society as a whole. 
+			
+			Or, since Engineering is the most common undergraduate degree in the Fortune 500 CEO community right now - one might think that today's engineers are the CEOs and board members of the future. If the demographics of board membership and executive leadership at the Fortune 500 companies look very similar to society as a whole, then maybe we can stop looking at race and ethnicity -- and gender -- checkboxes and move on to more important matters, since race really shouldn't matter anymore (right?). <p><p>According to 2010 US Census data, about 13% of the US population is black or African-American - is that reflected in board membership or engineering studies enrollment? Clearly not. As of today, only 6, or 1.2%, of Fortune 500 CEOs are black. Latinos make up 16.3% of the US population, but only 1.6% of Fortune 500 CEOs. Clearly our national diversity is not yet reflected in CEO diversity, or engineering degree diversity for that matter. Below are some pieces of data to look at race and ethnicity in Engineering and entrepreneurship.
+			
+			You can also look at the view of gender diversity, and don't forget to visit our main  <%= link_to "Research",   research_path %> page as well!
+			</div>
+			<div class="span12">
+			</div>
+		</div>
+
+	<div class="dashboardbkgd">
+		<div class="row-fluid">
+			<div class="span2">
+				Before we dig into percentages of engineering students, faculty, entrepreneurs, etc. by different racial and ethnic categories, it's instructive to look at the overall demographics of the US.
+			</div>
+
+			<div class="span5">
+				<%= image_tag("Data_Dashboard/USCensusRace.png") %>
+			</div>
+			
+			<div class="span5">
+				<%= image_tag("Data_Dashboard/USCensusEth.png") %>
+				<p><p><p><p><div class="dashboardfootnote">Source: US Census (2010)</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+	<div class="row-fluid">
+		<div class="span2">	
+			<%= image_tag("Data_Dashboard/neutralarrow-nonum.png") %>				
+			One leading indicator of the pipeline of potential engineers is the proportion of different racial and ethnic groups taking AP tests in computer science. The absolute number of AP test takers is up, and the proportion of Hispanic/Latino test takers is rising, but the proportion of Black/African-American test takers is decreasing from an already small fraction.
+		</div>
+
+		<div class="span5">
+			<%= image_tag("Data_Dashboard/APCSTestTakersRE.png") %>	
+		</div>
+	
+		<div class="span5">
+			<%= image_tag("Data_Dashboard/APCSTestTakersREPct.png") %>
+			<p><p><p><p><div class="dashboardfootnote">Source: College Board (2013)</div>
+		</div>	
+	</div>
+<hr>
+
+<div class="dashboardbkgd">	
+<div class="row-fluid">
+	<div class="span2">
+		<%= image_tag("Data_Dashboard/neutralarrow-nonum.png") %>
+		A second indicator of the pipeline is the number of engineering graduates of different backgrounds. For Bachelor's degrees, the numbers are fairly flat for both Latino and African-Amerian populations. However, for Doctoral Degrees and tenure-track Faculty positions, there does seem to be a bit of an upward trend, although today's numbers are still quite small overall. The upward trend could indicate that the members of those groups that do pursue Engineering disciplines are also more likely to pursue further academic accomplishment.	
+	</div>
+
+
+	<div class="span10">
+		<div class="row-fluid">
+			<div class="span6">
+				<%= image_tag("Data_Dashboard/BSAllEngRE.png") %>
+			</div>
+	
+			<div class="span6">
+				<%= image_tag("Data_Dashboard/MSAllEngRE.png") %>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span12">
+				<hr>				
+			</div> <!--span12-->
+		</div> <!--row-->
+	
+		<div class="row-fluid">
+			<div class="span6">
+				<%= image_tag("Data_Dashboard/DoctoralEngRE.png") %>
+			</div>
+	
+			<div class="span6">
+				<%= image_tag("Data_Dashboard/EngFacultyRE.png") %>
+				<p><p><p><p><div class="dashboardfootnote">Source: American Society for Engineering Education (ASEE) (2011)</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<hr>
+
+
+<div class="row-fluid">
+	<div class="span2">
+		<%= image_tag("Data_Dashboard/uparrow.png") %>
+	 The Center for Venture Research publishes demographics for venture funding by demographics. According to their metrics, "minority" entrepreneurs are a small fraction of the entrepreneur community, and are somewhat less likely than non-minority-owned companies to secure angel funding. However, the percentage of "minority" angel investors, while small, is increasing.
+	</div>
+
+	<div class="span5">
+		<%= image_tag("Data_Dashboard/AngelFundingRE.png") %>
+	</div>
+	
+	
+	<div class="span5">
+	<%= image_tag("Data_Dashboard/AngelInvestorsRE.png") %>
+	<p><p><div class="dashboardfootnote">Their use of "minority" not defined, but we assume it means members of traditionally underrepresented racial and ethnic backgrounds. Source: Center for Venture Research (2013)</div>
+	</div>
+</div>
+
+
+<hr>
+
+<div class="dashboardbkgd">	
+<div class="row-fluid">
+	<div class="span2">
+		<%= image_tag("Data_Dashboard/neutralarrow-nonum.png") %>
+		Finally, we looked at the composition of Fortune 500 CEOs, to see how it compares to overall US demographics. 
+	</div>
+
+	<div class="span3">
+		<%= image_tag("Data_Dashboard/USCensusRace.png") %>
+	</div>
+	
+	<div class="span3">
+	<%= image_tag("Data_Dashboard/USCensusEth.png") %>
+	<p><p><p><p><div class="dashboardfootnote">Source: US Census (2010)</div>
+	</div>
+	
+	<div class="span3">
+	<%= image_tag("Data_Dashboard/F500RE.png") %>
+	<p><p><p><p><div class="dashboardfootnote">Source: Diversity Inc. (2014)</div>
+	</div>
+</div>
+</div>
+</div>
+
+<div class="span2">
+	<br><br>
+
+	<hr>
+
+	<div class="row-fluid">
+		<div class="span12">				
+		</div> <!--span12-->
+	</div> <!--row-->
+
+	<div class="row-fluid" style="text-align:center">
+		<%= render "layouts/skyscraperad" %>						
+	</div> <!--row-->
+	
+	<div class="row-fluid">
+		<div class="span12">				
+		</div> <!--span12-->
+	</div> <!--row-->
+	
+	<div class="row-fluid" style="text-align:center">
+		<%= render "layouts/skyscraperad" %>						
+	</div> <!--row-->	
+	
+</div>
+</div>
+
+
