@@ -17,10 +17,9 @@
 	color: #000000;
 	text-align: right;
 }
-.dashimg
-{
 
-z-index:-1;
+.navbar-static-top {
+    z-index: 10000;
 }
 
 /* Styling for the survey banner*/
@@ -261,6 +260,7 @@ nav ul {
 	border-radius: 0px;  
 	list-style: none;
 	position: relative;
+	z-index: 1001;
 	display: inline-table;
 }
 
