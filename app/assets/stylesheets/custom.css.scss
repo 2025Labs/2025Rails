@@ -18,10 +18,6 @@
 	text-align: right;
 }
 
-.navbar-static-top {
-    z-index: 10000;
-}
-
 /* Styling for the survey banner*/
 .banner {
   font-weight: bold;
@@ -45,6 +41,10 @@
 	padding-top:10px;
 }
 
+.iconleft{
+	float: left;
+}
+
 /* This is just for the about_us page*/
 .names{
 	text-align: left;
@@ -63,10 +63,6 @@ img.center {
 	border-radius: 10px;
 }
 
-.iconleft {
-	float:left;
-}
-
 .picpadding {
 	padding-bottom:20px;
 }
@@ -78,7 +74,6 @@ img.center {
 .resourcebutton {
 	padding-bottom: 4px;
 }
-
 
 
 /* Styling to add some different text options that are used throughout */
@@ -139,11 +134,24 @@ img.center {
 	text-align: center;
 }
 
-.facts2 {
-
-	color: #cccc33;
-
+.factspink {
+	font-weight: bold;
+	font-size:75px;
+	line-height:76px;
+	color: #fff;
+	background-color: #aa3366;
+	text-align: center;
 }
+
+.factspink2 {
+	font-weight: bold;
+	font-size:20px;
+	line-height:26px;
+	color: #fff;
+	background-color: #aa3366;
+	text-align: center;
+}
+
 
 
 /* Styling for the main ideas */
@@ -203,6 +211,28 @@ a.mainideastopic:hover {
 
 a.mainideastopic:active {
 	color: #ff6600;
+}
+
+/* here are the fact links */
+
+a.facts1:active {
+	color: #fff;
+	text-decoration:none;
+}
+
+a.facts1:link {
+	color: #fff;
+	text-decoration:none;
+}
+
+a.facts1:visited {
+	color: #fff;
+	text-decoration:none;
+}
+
+a.facts1:hover {
+	color: #0099cc;
+	text-decoration:none;
 }
 
 
