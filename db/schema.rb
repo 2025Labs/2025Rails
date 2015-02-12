@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141006154900) do
+ActiveRecord::Schema.define(version: 20131009190739) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,18 +26,6 @@ ActiveRecord::Schema.define(version: 20141006154900) do
     t.string   "race"
     t.string   "attitudes"
     t.string   "gender"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "catagories", force: true do |t|
-    t.string   "name"
-    t.string   "navgraphic"
-    t.string   "color"
-    t.string   "timeline"
-    t.string   "headergraphic"
-    t.string   "video"
-    t.text     "keypoints"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -69,29 +57,6 @@ ActiveRecord::Schema.define(version: 20141006154900) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "r_type"
-  end
-
-  create_table "sections", force: true do |t|
-    t.integer  "topic_id"
-    t.integer  "catagory_id"
-    t.string   "linking"
-    t.string   "main_idea"
-    t.string   "header"
-    t.text     "content"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "topics", force: true do |t|
-    t.string   "topicname"
-    t.string   "name"
-    t.string   "video"
-    t.string   "navgraphic"
-    t.string   "headergraphic"
-    t.integer  "catagory_id"
-    t.text     "keypoints"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
 end
