@@ -1,5 +1,19 @@
 @import "bootstrap";
 
+/* defining the colors*/
+$logo_color: #FF1F00;
+$possible_color: #21B6A5;
+$slide_title: #FF1F00;
+$slide_text: #a1a1a1;
+$engineering_process_color: #1A9CD6;
+$materials_color: #A05CAC;
+$structures_color: #139F9D;
+$machines_color: #A3D147;
+$energy_color: #F59A00;
+$computing_color: #F74D9C;
+$video_area: #f6f6f6;
+$correct_color: #008000;
+
 /* Styling for dashboard */
 .dashboardbkgd{
 	background-color: #f1f1f1;
@@ -117,7 +131,7 @@ img.center {
 }
 
 .blogtxt {
-	color: #aa3366;
+	color: $logo_color;;
 
 }
 .missiontxt {
@@ -246,21 +260,21 @@ a.footheader:link {
 	text-decoration:none;
 	font-size: 17px;
 	font-family: Impact, Charcoal, sans-serif;
-	color: #aa3366;
+	color: $logo_color;
 }
 
 a.footheader:visited {
 	text-decoration:none;
 	font-size: 17px;
 	font-family: Impact, Charcoal, sans-serif;
-	color: #aa3366;
+	color: $logo_color;
 }
 	
 a.footheader:hover {
 	text-decoration:underline;
 	font-size: 17px;
 	font-family: Impact, Charcoal, sans-serif;
-	color: #21B6A5;
+	color: $logo_color;
 }
 
 a.footheader:active {
@@ -272,17 +286,17 @@ a.footheader:active {
 /*Styling  the footer sublinks */
 a.footsub:link {
 	text-decoration:none;
-	color: #aa3366;
+	color: $logo_color;
 }
 
 a.footsub:visited {
 	text-decoration:none;
-	color: #aa3366;
+	color: $logo_color;
 }
 	
 a.footsub:hover {
 	text-decoration:underline;
-	color: #21B6A5;
+	color: $logo_color;
 }
 
 a.footsub:active {
@@ -340,7 +354,7 @@ nav ul li a {
 
 #footer {
 	/*height: 50px;*/
-	background-color: #d9d9d9;
+	background-color: $video_area;
 	text-align: left;
 	padding-left:40px;
 	padding-top:20px;
