@@ -1,10 +1,14 @@
 
 <div class="container-fluid" style="padding-top:10px">	
 	<div class="row-fluid">
-			<div class="span3">
+			<div class="span2">
 			<%= link_to image_tag("2025Labs_logo_600.png", :alt => "2025Labs Logo"),   root_path %>
-		</div>
-			<div class="span9">
+			</div>
+			<div class="span8">
+				<%= link_to image_tag("navgraphics/missionbanner.png", :alt => "2025Labs Mission"),   root_path %>
+			</div>
+
+			<div class="span2">
 			<a href="https://twitter.com/2025Labs" target="_blank"><%= image_tag("twitter.png", :alt => "twitter logo", :class =>'socialmedia') %></a>
 			<a href="https://www.pinterest.com/2025labs/" target="_blank"><%= image_tag("pinterest_logo.png", :alt => "pinterest logo", :class =>'socialmedia') %></a>
 			<a href="https://www.youtube.com/channel/UCi2YUj1nfC4fHuB5VdCN3Kw" target="_blank"><%= image_tag("YouTube-social-square_red_29px.png", :alt => "YouTube logo", :class =>'socialmedia')%></a>
@@ -22,18 +26,8 @@
 							<li><%= link_to "BLOG",    blog_path %></li>
 						</ul>
 					</li>
-					<li><%= link_to "GET STARTED",    get_started_path %></li>
-					<li><%= link_to "INTRO TO ENGINEERING", intro_to_engineering_path, html_options = {:alt=>"Engineering for Kids"} %>
-						<ul>
-							<li><%= link_to "ENGINEERING PROCESS",    engineering_process_path, html_options = {:alt=>"Engineering for Kids: Engineering Process"} %> </li>
-							
-							<li><%= link_to "MATERIALS",    materials_path, html_options = {:alt=>"Engineering for Kids: Materials"} %></li>
-							<li><%= link_to "STRUCTURES",    structures_path, html_options = {:alt=>"Engineering for Kids: Structures"} %></li>
-							<li><%= link_to "MACHINES",    machines_path, html_options = {:alt=>"Engineering for Kids: Machines"} %></li>
-							<li><%= link_to "ENERGY",    energy_path, html_options = {:alt=>"Engineering for Kids: Energy"} %></li>
-							<li><%= link_to "COMPUTING",    computing_path, html_options = {:alt=>"Engineering for Kids: Programming"} %></li>
-						</ul>
-					</li>
+					<li><%= link_to "KIDS SITE",    "http://www.2025kids.com" %></li>
+					
 				    <li><%= link_to "RESOURCES",    resources_path %>
 						<ul>
 							<li><%= link_to "WEB RESOURCES",   resources_web_resources_path, html_options = {:alt=>"Engineering for Kids Web Resources"}  %></li>
