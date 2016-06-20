@@ -17,7 +17,8 @@ Site2025::Application.routes.draw do
    match '/get_started', to: 'static_pages#get_started', via: 'get'
    match '/getstarted2', to: 'static_pages#getstarted2', via: 'get'
    match '/blog', to: 'static_pages#blog', via: 'get'
-   
+   match '/services', to: 'static_pages#services', via: 'get'
+    
    match '/intro_to_engineering', to: 'static_pages#intro_to_engineering', via: 'get'
    match '/engineering_process', to: 'static_pages#engineering_process', via: 'get'
    match '/structures', to: 'static_pages#structures', via: 'get'
@@ -31,6 +32,7 @@ Site2025::Application.routes.draw do
    match '/rdashboard', to: 'articles#rdashboard', via: 'get'
    match '/resources', to: 'resource_types#index', via: 'get'
    match '/web_resources', to: 'resource_types#web_resources', via: 'get'
+   match '/parents_home', to: 'static_pages#parents_home', via: 'get'
    #match '/web_resources', to: 'resources#web_resources', via: 'get'
    #match '/camps_and_events', to: 'resources#camps_and_events', via: 'get'
    

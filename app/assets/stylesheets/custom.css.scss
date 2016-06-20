@@ -14,6 +14,31 @@ $computing_color: #F74D9C;
 $video_area: #f6f6f6;
 $correct_color: #008000;
 
+.logo_mainbkgd{
+	background-color: $logo_color;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	padding-top:10px;
+	margin-bottom:10px;
+}
+.banner-top-2025{
+	color:#fff;
+	font-size: 16px;
+	line-height: 20px;
+	text-decoration:none;
+}
+/* static or fixed navbar-static-top vs navbar-fixed-top was extend navbar-default*/
+.navbar-2025{
+	@extend .navbar-default;	
+#	background-color: $logo_color;
+	border-color: $logo_color;
+}
+.navbar-2025-bs2{
+	@extend .navbar-static-top;	
+#	background-color: $logo_color;
+	border-color: $logo_color;
+}
 /* Styling for dashboard */
 .dashboardbkgd{
 	background-color: #f1f1f1;
