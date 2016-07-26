@@ -9,8 +9,9 @@ Site2025::Application.routes.draw do
   #get "resource_types/index"
   resources :articles
   resources :resource_types
-  #get "articles/index"
-   root 'static_pages#home'
+  get "articles/index"
+ 
+  root 'static_pages#home'
 
    match '/contact', to: 'static_pages#contact', via: 'get'
    match '/about_us', to: 'static_pages#about_us', via: 'get'
@@ -30,9 +31,11 @@ Site2025::Application.routes.draw do
    match '/research', to: 'articles#index', via: 'get'
    match '/dashboard', to: 'articles#dashboard', via: 'get'
    match '/rdashboard', to: 'articles#rdashboard', via: 'get'
+   match '/new', to: 'articles#new', via: 'get'
    match '/resources', to: 'resource_types#index', via: 'get'
    match '/web_resources', to: 'resource_types#web_resources', via: 'get'
    match '/parents_home', to: 'static_pages#parents_home', via: 'get'
+   
    #match '/web_resources', to: 'resources#web_resources', via: 'get'
    #match '/camps_and_events', to: 'resources#camps_and_events', via: 'get'
    

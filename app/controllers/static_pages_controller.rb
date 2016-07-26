@@ -19,7 +19,10 @@ class StaticPagesController < ApplicationController
   
   def engineering_process
   end
-  
+
+  def kids_site
+  end
+    
   def structures
   end
   

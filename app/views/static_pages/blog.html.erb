@@ -1,15 +1,17 @@
+<div class="container-fluid">
 <% provide(:title, '2025 Labs Blog: Insights and Commentary on Engineering in the News') %>
 <% provide(:description, '2025 Labs creates engineering article blogs about interesting engineering trends in the news focused on kids.') %>
 
-<div class="row-fluid">
-	<div class="span3">
-		<%= image_tag("pics/girlswithsnapcircuits.jpg", :alt => "girls playing with snap circuits", :class =>'rounded') %> 
-		
-		<br><br><br>
+<div class="row featurette">
+	<div class="col-sm-3">
 
+		<span class="visible-md visible-lg">
+		<%= image_tag("pics/girlswithsnapcircuits.jpg", :alt => "girls playing with snap circuits", :class =>'rounded', :class=> 'featurette-image img-responsive center-block') %> 
+		</span>
+		
 	</div>
 	
-	<div class="span6">
+	<div class="col-sm-6">
 				<h2>Blog</h2>
 
 				<h4 class="blogtxt">OMG – So Much Going On!</h4>
@@ -165,12 +167,7 @@ Melissa and the entire 2025 Labs Team
 				Melissa Liu
 				<br>
 				2025 Labs CEO (and female Engineering degree-holder)
-		
-		
-		
-		
-		
-		
+	
 		<br><br><br><br>
 		<h4 class="blogtxt">State of the Nation: GoldieBlox, PISA, Competitiveness, and Diversity</h4>
 		&#8212 December 4, 2013
@@ -191,25 +188,30 @@ While I’m offering commentary about test score differences, let’s talk about
 		<br>
 		2025 Labs CEO (and female Engineering degree-holder)
 		
-	</div> <!--span6-->	
-
-	<div class="span3">
-		<div class="row-fluid">
+	</div> <!--col-sm-6-->	
+	 
+	<div class="col-sm-3">
+		<div class="container-fluid">	
+			<span class="visible-md visible-lg">
+				<div class="row">
 			<br><br>
-			<div class="facts"><a class="facts1" <%= link_to "50%",    research_path %></a></div>
+					<div class="facts"><a class="facts1" <%= link_to "50%",    research_path %></a></div>
 			<br>
 			50% of the 20 woman CEOs in Fortune 500 companies have STEM degrees.
 			<hr>
-         </div> <!--row-->
+        		 </div> <!--row-->
 
-		<div class="row-fluid">
-			<div class="span12">				
-			</div> <!--span12-->
+			<div class="row">
+			<div class="col-sm-12">				
+			</div> <!--col-sm-12-->
 		</div> <!--row-->
 		
-		<div class="row-fluid" style="text-align:center">
+		<div class="row" style="text-align:center">
 			<iframe src="http://rcm-na.amazon-adsystem.com/e/cm?t=2025labs-20&o=1&p=14&l=ur1&category=booksteach&banner=01W6KZG4QZMD00EKF982&f=ifr&linkID=QMLVNOJVRLPI7O37" width="160" height="600" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>				
 		</div> <!--row-->
-		
-     </div>	<!--row span3-->
-</div><!--row-fluid-->
+		</span>
+		</div>
+     </div>	<!--col-sm-3-->
+</div><!--row-->
+
+</div>

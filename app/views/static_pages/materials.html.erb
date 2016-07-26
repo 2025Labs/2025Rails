@@ -1,18 +1,17 @@
 <% provide(:title, 'Introducing Materials to Kids: 2025 Labs') %>
 <% provide(:description, 'Selection of materials for use in a structure, machine, or device is often a critical decision with multiple alternatives, each with their advantages and disadvantages. This section introduces some history of materials, key properties, and particular materials of interest in our modern era.') %>
 
+<div class="row">
 
-<div class="row-fluid">
-
-	<div class="span2">
+	<div class="col-sm-2">
 		<%= render "contentnav" %>
 	</div>
-	<div class="span8">
+	<div class="col-sm-8">
 		<%= image_tag("pics/mttag.png", :alt => "Materials Icon", :class => "iconleft") %>	
 		<h2>&#011;  Materials</h2>
 		
-		<div class="row-fluid">
-			<div class="span3">
+		<div class="row">
+			<div class="col-sm-3">
 				<div class="mainideas">
 					<div class="mainideasheader">
 						Main Ideas
@@ -38,9 +37,9 @@
 					<a class="mainideastopic"<%= link_to "Engineers select materials based on the intended use of the structure to be built, and the inherent properties of the materials", :anchor => "MaterialsToStructures" %></a>
 					<br><br>
 				</div> <!-- main ideas section close -->
-			</div> <!-- span 3 for main ideas close -->
+			</div> <!-- col-sm-3 for main ideas close -->
 			
-			<div class="span9">
+			<div class="col-sm-9">
 				<h5><a id="MaterialsUse"><span class="sectionheader">Materials used to build something must be appropriate for its planned use</span></a></h5> 
 					Would you build a bridge out of particle board? Or make a basketball out of glass? <p><p>Particle board is a wood product made from leftover wood, such as wood chips or sawdust. It is used in places where a wood-like material is desired, but low cost is more important than strength: uses such as kitchen drawers or low-cost furniture. So, it probably not the best choice for a structure - like a bridge - that must hold the weight of lots of large vehicles. And a basketball made of glass would likely not survive the first bounce on the floor - and even if it did, it would not rebound nicely back into your hand to allow you to continue to dribble down the basketball court. <p><p>Clearly then, materials used to build things must be appropriate for how those things are to be <i>used</i>, and choice of materials is often part and parcel of the design process. This section is going to describe some basics about how Engineers think about materials.
 					<p><p>
@@ -48,11 +47,11 @@
 				<h5><a id="MaterialsEras"><span class="sectionheader">Materials are so critical that eras in history have been named for materials in use during the period</span></a></h5> 
 					People have been thinking about materials for a very long time. In fact, we have named key periods of history by materials in use at the time. For example, the "Stone Age" refers to the very early period of mankind when people learned to make and use stone tools. <p><p>
 					
-				<div class="row-fluid">
-					<div class="span6">
+				<div class="row">
+					<div class="col-sm-6">
 					The Bronze Age came after the Stone Age. Somehow, mankind's early experimentation with copper showed that adding tin to copper results in a metal alloy that is harder and has a lower melting temperature. An alloy is a combination of metals, and the alloy of copper and tin is a material we call Bronze. The lower melting temperature meant that people could <i>cast</i> bronze into particular shapes. Bronze was used to make weapons, tools, decorative items like vases and jewelry, and structures. 
 					</div>
-					<div class="span6">
+					<div class="col-sm-6">
 						<%= image_tag("pics/BohemianBronzeVase.JPG", :alt => "Bronze cup. Prehistoric Times of Bohemia, Moravia and Slovakia, National Museum in Prague", :class => 'picpadding') %>
 					</div>
 				</div>
@@ -146,33 +145,28 @@
 					<h5><a id="MaterialsToStructures"><span class="sectionheader">Engineers select materials based on the intended use of the structure to be built, and the inherent properties of the materials</i></span></a></h5>
 				We started by talking about how different materials have different properties, and how you would choose materials for a thing (object or structure) based on the identified use of the structure, and the materials needed to support that use. That leads us nicely to the section on <%= link_to "Structures",   structures_path %>. Meanwhile, if you are curious about other materials properties, you can look up properties of materials on <a href="http://www.matweb.com" target="_blank">MatWeb</a>. This is a very comprehensive site, and goes way beyond the concepts here - but it is interesting to browse through. For example, if you search for "steel", a large number of results will be returned for various types of steel, from Low Carbon Steel, to Stainless Steel, to Water Hardening Steel - 50 different types of steel at current note - and you can find out more about each one of these.
 				
-
-			
-			
-			</div> <!--span 9 for contents-->
+			</div> <!--col-sm-9 for contents-->
 		</div> <!-- row definition for main content section-->
 					
-	</div> <!--span 8 for middle section -->		
+	</div> <!--col-sm-8 for middle section -->		
 
-
-	<div class="span2">			
+	<div class="col-sm-2">			
 		<br><br><br>
 		<div class="factspink"><a class="facts1" <%= link_to "20%",    research_path %></a></div>
 		<br>
 		Women still hold only 20% of computer science jobs.
 		
-
 		<hr>
 
-		<div class="row-fluid">
-			<div class="span12">				
-			</div> <!--span12-->
+		<div class="row">
+			<div class="col-sm-12">				
+			</div> <!--col-sm-12-->
 		</div> <!--row-->
 
-		<div class="row-fluid" style="text-align:center">
+		<div class="row" style="text-align:center">
 			<%= render "layouts/skyscraperad" %>						
 		</div> <!--row-->	
 
-	</div> <!--span 2 for stats-->
+	</div> <!--col-sm-2 for stats-->
 
 </div>	<!--row-->

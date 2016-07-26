@@ -1,45 +1,85 @@
-<div class="row-fluid", style= "padding-top:10px; ">			
+
+<div class="container-banner">
+ <div class="row", style= "padding-top:10px;">			
 	<div class="logo_mainbkgd">
-			<span class="banner-top-2025" > Welcome to 2025 Labs</span>
+			<span class="banner-top-2025"> Welcome to 2025 Labs</span>
 	</div> <!-- background -->
 </div>	
+</div>
 
-<div id="navbar" class="navbar navbar-2025-bs2" >
-			<nav>  
-				<ul class="nav pull-right">
-			      	<li><%= link_to "HOME",    root_path %>
-						<ul>
-							<li><%= link_to "ABOUT US",    about_us_path %></li>
-							<li><%= link_to "CONTACT",    contact_path %></li>
-							<li><%= link_to "BLOG",    blog_path %></li>
+<div class="container-header">
+<div class="navbar navbar-2025">	<!--nav class starts here-->
+	<div class = "container-fluid" > <!--container-fluid -->
+
+		<div class="navbar-header"> 
+			<%= link_to image_tag("2025_labs_no-tagline_300x100.png", 
+			:class=> 'navbar-brand'), root_path %>
+			<button type="button" class="navbar-toggle collapsed" data-toggle	="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded ="false">
+				<span class="sr-only"> Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+			<ul class="nav navbar-nav navbar-right">
+
+				<li class="<%= 'active' if current_page?(root_path) %>">
+					<%= link_to "Home", root_path %> 
+				</li>
+				
+				<li><a href="http://www.2025kids.com" target="_blank">Kids Site</a>
+				</li>
+
+				<li class="dropdown">
+					<a href="#"  class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b>
+					</a>
+						<ul class="dropdown-menu">
+							<li><%= link_to "Web Resources",   resources_web_resources_path, html_options = {:alt=>"Engineering for Kids Web Resources"}  %>
+							</li>
+							<li><%= link_to "Toys and Games",    resources_toys_and_games_path, html_options = {:alt=>"Engineering for Kids Toys and Games"}  %>
+							</li>
+							<li><%= link_to "Camps and Events",    resources_camps_and_events_path, html_options = {:alt=>"Engineering for Kids Camps and Events"}  %>
+							</li>
+							<li><%= link_to "Scholarships",    resources_awards_scholarships_path, html_options = {:alt=>"Engineering for Kids Scholarships"}  %>
+							</li>
+							<li><%= link_to "Books",    resources_books_path, html_options = {:alt=>"Engineering for Kids Books"}  %>
+							</li>
 						</ul>
-					</li>
-					<li><%= link_to "KIDS SITE",    "http://www.2025kids.com" %></li>
-					
-				    <li><%= link_to "RESOURCES",    resources_path %>
-						<ul>
-							<li><%= link_to "WEB RESOURCES",   resources_web_resources_path, html_options = {:alt=>"Engineering for Kids Web Resources"}  %></li>
-							<li><%= link_to "TOYS AND GAMES",    resources_toys_and_games_path, html_options = {:alt=>"Engineering for Kids Toys and Games"}  %></li>
-							<li><%= link_to "CAMPS AND EVENTS",    resources_camps_and_events_path, html_options = {:alt=>"Engineering for Kids Camps and Events"}  %></li>
-							<li><%= link_to "SCHOLARSHIPS",    resources_awards_scholarships_path, html_options = {:alt=>"Engineering for Kids Scholarships"}  %></li>
-							<li><%= link_to "BOOKS",    resources_books_path, html_options = {:alt=>"Engineering for Kids Books"}  %></li>
+				</li>
 
+				<li class="dropdown">
+						<a href="#"  class="dropdown-toggle" data-toggle="dropdown">Research<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><%=link_to "Research Articles", research_path%>
+							</li>
+							<li><%=link_to "Dashboard", dashboard_path%>
+							</li>
 						</ul>
-					</li>
+				</li>
+				
+				<!-- <li class="dropdown"> -->
+						<!-- <a href="#"  class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a> -->
+						<!-- <ul class="dropdown-menu"> -->
+							<!-- <li><%=link_to "About Us", about_us_path%> -->
+							<!-- </li> -->
+							<!-- <li><%=link_to "Contact", contact_path%> -->
+							<!-- </li> -->
+							<!-- <li><%=link_to "Blog", blog_path%> -->
+							<!-- </li> -->
+						<!-- </ul> dropdown menu  -->
+					<!-- </li> dropdown -->
+
+
+			</ul> <!--nav navbar-nav navbar-right -->
+		</div> <!-- navbar-collapse-->
+	</div> <!--container-fluid -->
+</div> <!--nav -->
+</div>
+
+
+
+
 					
-					<li><%= link_to "RESEARCH",    research_path %>
-						<ul style="right: -1px;">
-							<li><%= link_to "RESEARCH ARTICLES",   research_path  %></li>
-							<li><%= link_to "DASHBOARD",   dashboard_path, html_options = {:alt=>"Dashboards tracking Equity in Engineering"}  %></li>
-
-						</ul>
-					</li>
-					
-
-			    </ul>
-			</nav><!--nav-->
-
-	</div> <!--navbar-->
-	
-</div> <!--container-->
-<br>

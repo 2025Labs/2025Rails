@@ -1,30 +1,24 @@
-<div class="container-fluid">
 <% provide(:title, 'Engineering Books for Kids: 2025 Labs') %>
 <% provide(:description, 'A list of some really great books to help introduce kids to Engineering. Some are written for the kids themselves; a few might be better read by the parents first.') %>
 
-<div class="row featurette">
+<div class="row">
+	
 	<div class="col-sm-2">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-12">
-				<span class="visible-md visible-lg">
-					<%= render "static_pages/resourcesnav" %>
-					</span>
-				</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<%= render "static_pages/resourcesnav" %>
 			</div>
-		</div>
+		</div>	
 	</div>
-
-	<div class="col-sm-7">
-
+	
+    <div class="col-sm-7">
 		<h2> Engineering Books and Magazines for Kids </h2>
 		This page includes some books that we have taken a look at and have decided are a good resource to introduce Engineering to kids. The books listed are coded according to the engineering area(s) that the resource pertains to, such as the Engineering Process, Machines, Energy, or Computing. 
 		<p><p>We've included links to shop for these books online. We like Amazon for the reviews, because parents share their experiences in great detail. Besides, we do earn a tiny little bit of money for any sales that occur through this channel, which will help us fund more of this research and content! You can also take a look at your local public library. If they don't have it in stock in your local branch, they can often find a way to locate them elsewhere and provide them to you.<br><br>
 	
 		<% @resources.each do |resource| %>
-	<div class="row featurette">
+		<div class="row">
 			<div class="col-sm-2">
-		<br> 
 					<% unless resource.engineering_process.blank? %>
 						<%= link_to image_tag(resource.engineering_process, :class => 'resourcebutton'),   engineering_process_path %>
 					<% end %>		
@@ -48,43 +42,39 @@
 					<% unless resource.computing.blank? %>
 						<%= link_to image_tag(resource.computing, :class => 'resourcebutton'),   computing_path %>
 					<% end %>
-				<p><%= resource.ages %>	 
+				<p><%= resource.ages %>	
 			</div>
-		
-			<div class="col-sm-2"> <br>
+			
+			<div class="col-sm-2">
 				<%= resource.buy_link.html_safe %>
 			</div>
 
 			<div class="col-sm-8">
 				<span class="colortxt2"><%=resource.title.html_safe %></span>
 				<%=resource.description.html_safe %>			
-			</div> <!--col-sm-9-->	
+			</div> <!--col-sm-8-->	
 		</div><!--row-->	
 
 		<div class="row">
 			<div class="col-sm-12">
 			</div> <!--col-sm-12-->	
 		</div> <!--row-->
-		<% end %> <br>
+		<% end %>
 		
 		<a href="mailto:info@2025labs.com?Subject=Suggestion%20For%20Web%20Resources" target="_top"><%= image_tag("pics/resource_suggestion.png", :alt => "suggest a resource", :class =>"center") %></a>
 		
 		<a > <img class="center" src=""> </a>
 						
     </div> <!--col-sm-7-->	
-    
-	<div class="col-sm-3">	
-		<span class="visible-md visible-lg">
-		<div class="container-fluid">
-		<div class="row">
 		
+	<div class="col-sm-3">	
+		<div class="row">
 			<br><br><br>
 			<div class="facts2"><a class="facts1" <%= link_to "financial benefits and the ability to solve world problems",    research_path %></a></div>
 			<br>
 			A 2011 Intel survey highlighted that knowledge of the financial benefits and the ability to solve world problems were key influences that changed the perceptions of teens about what it means to be an Engineer and increased their interest in an Engineering career
 			<hr>
     	</div> <!--col-sm-12-->
-    	</div>
 
         <div class="row">
 			<div class="col-sm-12">				
@@ -96,8 +86,6 @@
 			<iframe src="http://rcm-na.amazon-adsystem.com/e/cm?t=2025labs-20&o=1&p=14&l=ur1&category=booksteach&banner=01W6KZG4QZMD00EKF982&f=ifr&linkID=QMLVNOJVRLPI7O37" width="160" height="600" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 						
 		</div> <!--row-->
-		</span>
 	</div> <!--col-sm-3-->	
 		
 </div>	<!--row-->
-</div>

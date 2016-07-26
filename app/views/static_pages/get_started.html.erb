@@ -1,35 +1,33 @@
 <% provide(:title, 'How to Get Started in Introducing Kids to Engineering: 2025 Labs') %>
 <% provide(:description, 'Parents and educators use our website to learn about key Engineering concepts and to help them find age-appropriate resources for sharing these concepts and practices with kids.') %>
 
-<div class="row-fluid">
-	<div class="span12">
+<div class="row">
+	<div class="col-sm-12">
 		<h2>Get Started</h2>
 	</div>
 </div>
 	
-<div class="row-fluid">
-	<div class="span3">
+<div class="row">
+	<div class="col-sm-3">
 		<h4>Using This Website</h4> <p><p>This website is an Information Hub for introducing kids to Engineering. We aim to help parents and educators learn about key Engineering concepts and find age-appropriate resources for sharing these concepts and practices with kids. <p>In <%= link_to "Intro to Engineering",   intro_to_engineering_path %>, you'll find a framework of four key concepts that lay a foundation to understanding the world of Engineering. 
 		<p><p>
 		In <%= link_to "Resources",    resources_path %>, you'll find Engineering-related videos and websites, Engineering-themed toys and games, and Engineering-related camps and events. Next to each resource, we've indicated which of the key Engineering concepts it relates to in the   framework so you'll always know where each resource fits into the big picture.  <p> We hope this site helps you to give your kids a chance to practice Engineering!	
-	</div> <!--span3-->
+	</div> <!--col-sm-3-->
 		
-			
-	<div class="span3">
+	<div class="col-sm-3">
 		<h4><%= link_to "Intro to Engineering",   intro_to_engineering_path %></h4> 
 		<p><p>
 		<%= render "contentnav" %>
-	</div> <!--span3-->
+	</div> <!--col-sm-3-->
 			
-		
-	<div class="span3">
+	<div class="col-sm-3">
 		<h4><%= link_to "Resources",    resources_path %></h4>
 		<p><p>
 		<%= render "resourcesnav" %>	
-	</div> <!--span3-->
+	</div> <!--col-sm-3-->
 					
-	<div class="span3">
-		<div class="row-fluid">
+	<div class="col-sm-3">
+		<div class="row">
 			<br><br>
 			<div class="factspink"><a class="facts1" <%= link_to "33%",    research_path %></a></div>
 			<br>
@@ -37,14 +35,14 @@
 			<hr>
 		</div>
 			
-		<div class="row-fluid">
-			<div class="span12">				
-			</div> <!--span12-->
+		<div class="row">
+			<div class="col-sm-12">				
+			</div> <!--col-sm-12-->
 		</div> <!--row-->
 
-		<div class="row-fluid" style="text-align:center">
+		<div class="row" style="text-align:center">
 			<%= render "layouts/skyscraperad" %>				
 		</div> <!--row-->
 
-	</div> <!--span3-->
+	</div> <!--col-sm-3-->
 </div><!--row-->

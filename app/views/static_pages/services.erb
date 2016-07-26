@@ -1,15 +1,15 @@
 <% provide(:title, 'About Us') %>
 <% provide(:description, 'We are a services company with a social mission to give all kids, regardless of ethnicity, gender or socioeconomic background, the opportunity to become creators') %>
 
-<div class="row-fluid">
-	<div class="span2">
+<div class="row">
+	<div class="col-sm-2">
 		<br><br>
 		<%= image_tag("pics/melissa-drawing.png", :alt => "founder", :class =>'rounded') %> 
 		<br><br>
 
 	</div>
 	
-	<div class="span7">
+	<div class="col-sm-7">
 		<h2>Services</h2>
 		<span class="colortxt">Who We Are</span><br>
 		We have taken a convoluted path in the creation of this company. Our founder came from an engineering and consulting background and already had a successful consulting business. Then she founded 2025 Labs with a mission is to bring technology literacy to all kids and inspire a more diverse next generation of technology creators. <br><br>
@@ -19,7 +19,6 @@
 		Because of that (and the fact that we missed consulting), we decided to stop (for now) trying to make a profit on the social mission side of the company. We decided to put the consulting business and 2025 Labs together, and make it into a services business with a social mission. 
 		
 		The social benefit part of the company - bringing technology literacy to all kids - will not be run for profit, but will be run as a benefit to society within a profitable services company.
-		
 		
 		</br>
 		</br>
@@ -33,13 +32,11 @@ If we rely, as a society, on expensive summer camps to introduce kids to enginee
 		</br>
 		<span class="colortxt"> Services</span> <br>There are wide range of services and skills we can provide, from leading engineering projects in the classroom to management and small business consulting and program management to graphics, video, and web design and implementation. We are in the midst of this transition and will provide more information soon.
 		</br><br>
-  	
+  			
+	</div> <!--col-sm-7-->	
 
-		
-	</div> <!--span6-->	
-
-	<div class="span3">
-		<div class="row-fluid">
+	<div class="col-sm-3">
+		<div class="row">
 
 			<br><br><br>
 			<div class="facts2"><a class="facts1" <%= link_to "Encouragement + Exposure",    research_path %></a></div>
@@ -48,14 +45,14 @@ If we rely, as a society, on expensive summer camps to introduce kids to enginee
 			<hr>
          </div> <!--row-->
 
-		<div class="row-fluid">
-			<div class="span12">				
-			</div> <!--span12-->
+		<div class="row">
+			<div class="col-sm-12">				
+			</div> <!--col-sm-12-->
 		</div> <!--row-->
 		
-		<div class="row-fluid" style="text-align:center">
+		<div class="row" style="text-align:center">
 			<%= render "layouts/amazonskyscraperadgc" %>				
 		</div> <!--row-->
 		
-     </div>	<!--row span3-->
-</div><!--row-fluid-->
+     </div>	<!--row col-sm-3-->
+</div><!--row-->

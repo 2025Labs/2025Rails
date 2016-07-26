@@ -1,14 +1,16 @@
+<div class="container-fluid">
 <% provide(:title, 'About Us') %>
 <% provide(:description, 'We are a services company with a social mission to give all kids, regardless of ethnicity, gender or socioeconomic background, the opportunity to become creators') %>
 
-<div class="row-fluid">
-	<div class="span3">
-		<%= image_tag("pics/boyoncomputercardboardbridge.png", :alt => "boy playing with robot", :class =>'rounded') %> 
+<div class="row featurette">
+	<div class="col-sm-3">
+	<span class="visible-md visible-lg">
+		<%= image_tag("pics/boyoncomputercardboardbridge.png", :alt => "boy playing with robot", :class =>'rounded', :class=> 'featurette-image img-responsive center-block') %> 
 		<br><br><br><br>
-
+	</span>
 	</div>
 	
-	<div class="span6">
+	<div class="col-sm-6">
 		<h2>About Us</h2>
 		<span class="colortxt">Who We Are</span><br>
 		We have taken a convoluted path in the creation of this company. Our founder came from an engineering and consulting background and already had a successful consulting business. Then she founded 2025 Labs with a mission is to bring technology literacy to all kids and inspire a more diverse next generation of technology creators. <br><br>
@@ -33,10 +35,10 @@ If we rely, as a society, on expensive summer camps to introduce kids to enginee
 		<span class="colortxt"> Services</span> <br>Visit our services site, <a href="http://www.2025consulting.com" target="_blank">www.2025consulting.com</a>, to find out more about our services. 
 		</br><br>
 		
-		
 	</div> <!--span6-->	
 
-	<div class="span3">
+	<div class="col-sm-3">
+	<span class="visible-md visible-lg">
 		<div class="row-fluid">
 			<br><br>
 			<div class="facts"><a class="facts1" <%= link_to "50%",    research_path %></a></div>
@@ -45,14 +47,15 @@ If we rely, as a society, on expensive summer camps to introduce kids to enginee
 			<hr>
          </div> <!--row-->
 
-		<div class="row-fluid">
-			<div class="span12">				
+		<div class="row">
+			<div class="col-sm-12">				
 			</div> <!--span12-->
 		</div> <!--row-->
 		
-		<div class="row-fluid" style="text-align:center">
+		<div class="row" style="text-align:center">
 			<%= render "layouts/amazonskyscraperadgc" %>				
 		</div> <!--row-->
-		
+		</span>
      </div>	<!--row span3-->
-</div><!--row-fluid-->
+</div><!--row-->
+</div>

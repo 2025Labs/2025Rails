@@ -1,103 +1,104 @@
 <% provide(:title, 'Research on Engineering Demographics, Income, Gender, and Race: 2025 Labs') %>
 <% provide(:description, 'Research on Engineering Demographics, Income, Gender, and Race. For example, women comprise 18% of Engineering majors and only 7% of corporate CIOs.') %>
-
-<div class="row-fluid">
-	<div class="span12">
+ <div class="container-fluid">	
+<div class="row">
+	<div class="col-sm-12">
 		<h2>Research</h2>
 			<p>Below are a series of articles with data regarding engineering demographics, trends, engineering occupational outlook, factors that influence a decision to pursue engineering, etc. In addition, we have started a couple of dashboards on the state of diversity in engineering, our <%= link_to "Gender Diversity Dashboard",   dashboard_path %>, as well as a  our <%= link_to "Race/Ethnicity Diversity Dashboard",   rdashboard_path %>. 
 	</div>
 </div>
-<div class="row-fluid">
-	<div class="span12">
+<div class="row">
+	<div class="col-sm-12">
 	</div>
 </div>
-
-<div class="row-fluid">
-	<div class="span2">
+ <br>
+<div class="row">
+	<div class="col-sm-2">
 		<%= image_tag("logos/education.png") %> Education
-	</div> <!--span2-->
+	</div> <!--col-sm-2-->
 	
-	<div class="span2">
+	<div class="col-sm-2">
 		<%= image_tag("logos/gender.png") %> Gender
-	</div> <!--span2-->	
+	</div> <!--col-sm-2-->	
 	
-	<div class="span2">
+	<div class="col-sm-2">
 		<%= image_tag("logos/race.png") %> Race/Ethnicity
 	</div>
 	
-	<div class="span2">
+	<div class="col-sm-2">
 		<%= image_tag("logos/attitudes.png") %> Social Factors
-	</div> <!--span2-->	
+	</div> <!--col-sm-2-->	
 	
-	<div class="span2">
+	<div class="col-sm-2">
 		<%= image_tag("logos/employment.png") %> Employment
-	</div> <!--span2-->	
+	</div> <!--col-sm-2-->	
 
 </div> <!--row-->	
 
-<div class="row-fluid">
-	<div class="span12">
+<div class="row">
+	<div class="col-sm-12">
 	</div>
 </div>
-
-
-<div class="row-fluid">
-	<div class="span9">
+<br>
+<div class="row featurette">
+	<div class="col-sm-9">
 		<% @articles.each do |article| %>
-		<div class="row-fluid">
-			<div class="span2">
+		<div class="row">
+			<div class="col-sm-2">
 				<%= image_tag(article.education) %>
 				<%= image_tag(article.gender) %>
 				<%= image_tag(article.race) %>
 				<%= image_tag(article.attitudes) %>
 				<%= image_tag(article.employment) %>
-			</div><!--span1-->
+			</div><!--col-sm-2-->
 	
-			<div class="span1">
-				<%= image_tag(article.source_logo) %>
-			</div><!--span2-->
+			<div class="col-sm-1">
+			<span class="visible-md visible-lg">
+				<%= image_tag(article.source_logo, :class=> 'featurette-image img-responsive center-block') %>
+				</span>
+			</div><!--col-sm-1-->
 
-    		<div class="span9">
+    		<div class="col-sm-9">
 
 				<span class="colortxt2"><%=article.title.html_safe%></span>
 				<%=article.summary.html_safe %>	
-			</div> <!--span10-->
+			</div> <!--col-sm-9-->
 		</div><!--row-->
 		
-		<div class="row-fluid">
-			<div class="span12">				
-			</div> <!--span12-->
+		<div class="row">
+			<div class="col-sm-12">				
+			</div> <!--col-sm-12-->
 		</div> <!--row-->
 		
 		<% end %>
 		
-
-		
+	<br>		
 		<a href="mailto:info@2025labs.com?Subject=Suggestion%20For%20Web%20Resources" target="_top"><%= image_tag("pics/resource_suggestion.png", :alt => "suggest a resource", :class =>"center") %></a>
+
+	</div>	<!--col-sm-9-->
 		
-		
-			
-		
-		
-	</div>	<!--span9-->
-		
-	<div class="span3">
-		<div class="row-fluid">
-			<%= link_to image_tag("facts/sciedu.png", :alt => "Science is taught daily in just one in five classrooms in the US"),   research_path %>
+	<div class="col-sm-3">
+		<div class="container-fluid">	
+			<span class="visible-md visible-lg">
+				<div class="row featurette">
+				<%= link_to image_tag("facts/sciedu.png", :class=> 'featurette-image img-responsive center-block',  :alt => "Science is taught daily in just one in five classrooms in the US"),   research_path %>
 			<hr>
-		</div> <!--row-->
-			
-		<div class="row-fluid">
-			<div class="span12">				
-			</div> <!--span12-->
+				</div> <!--row-->
+			</span>
+		</div>	
+		<div class="row">
+			<div class="col-sm-12">				
+			</div> <!--col-sm-12-->
 		</div> <!--row-->
 
-		<div class="row-fluid" style="text-align:center">
-			<iframe src="http://rcm-na.amazon-adsystem.com/e/cm?t=2025labs-20&o=1&p=14&l=ur1&category=stem&banner=09PFBRBM7S1P6G18CPG2&f=ifr&linkID=UPKW3XOG5NQIOX4H" width="160" height="600" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>			
+		<div class="row" style="text-align:center">
+			<span class="visible-md visible-lg">
+			<iframe src="http://rcm-na.amazon-adsystem.com/e/cm?t=2025labs-20&o=1&p=14&l=ur1&category=stem&banner=09PFBRBM7S1P6G18CPG2&f=ifr&linkID=UPKW3XOG5NQIOX4H" width="160" height="600" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>	
+			</span>		
 		</div> <!--row-->
-		
-	</div> <!--span3-->
+		</span>
+	</div> <!--col-sm-3-->
 </div><!--row-->
 	
-
+</div>
 

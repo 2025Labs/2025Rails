@@ -1,19 +1,19 @@
 <% provide(:title, 'Introducing Structural Engineering to Kids: 2025 Labs') %>
 <% provide(:description, 'Bridges and buildings are some of the things people often think about when they consider what Engineering is. Here we talk about key principles behind the engineering of Structures.') %>
 
-<div class="row-fluid">
+<div class="row">
 
-	<div class="span2">
+	<div class="col-sm-2">
 		<div class="sidebar-nav-fixed">
 		<%= render "contentnav" %>
 		</div>
 	</div>
 	
-	<div class="span8">
+	<div class="col-sm-8">
 		<%= image_tag("pics/stag.png", :alt => "Structures Icon", :class => "iconleft") %>	
 		<h2>&#011;  Structures</h2>
-		<div class="row-fluid">
-			<div class="span3">
+		<div class="row">
+			<div class="col-sm-3">
 				<div class="mainideas">
 					<div class="mainideasheader">
 						Main Ideas
@@ -32,19 +32,18 @@
 				<a class="mainideastopic"<%= link_to "Structures change as new materials and designs are created", :anchor => "Structures Change as New Materials and Designs are Created" %> </a>
 				</div>
 			</div>
-			<div class="span9">
+			<div class="col-sm-9">
 
 				Over the next two sections, we are going to look at two different types of technology, structures and machines. Engineers use the different engineering processes to create and maintain technology. Merriam-Webster defines <a href="http://www.merriam-webster.com/dictionary/technology" target="_blank">technology</a> as "the use of science in industry, engineering, etc., to invent useful things or to solve problems." Technology comes in different forms, such as machines, devices, structures, processes, programs or systems. We selected structures and machines because there are many resources available to learn about them, and understanding what they are and how they work will take you a long way toward understanding much of the technology you come into contact with daily.	
 				<h5><a id="A Structure is Load Bearing"><span class="sectionheader">A Structure is something that is Load Bearing</span></a></h5> 
-				
 				<p><p>
 				As you read this website, you are likely in a building, sitting in a chair of some sort, possibly with your computer on a table in front of you. That’s five bits of technology right in that one sentence&#8212;the building, chair, table, computer and website. We’ll get to computers and websites in the machines and computing sections, but the focus of this section is on things like buildings, chairs, and tables, which are structures. The word structure can refer to many things, from social structures to molecular structures. At its broadest definition, a structure is something with parts arranged in a particular way. From an engineering perspective, a structure is something that is load bearing, which means it either supports or resists a load or does both at the same time.
 				<p><p>
-				<div class="row-fluid">
-					<div class="span6">
+				<div class="row">
+					<div class="col-sm-6">
 					Load is another word for force, and different structures are designed to hold up with different forces being exerted on them. For example a bridge is designed to support the weight of the vehicles and people crossing it and also to resist the force of the wind blowing against it. Depending on where the bridge is located, it might also be designed to resist the movement of the earth during an earthquake. A bridge or maybe a skyscraper may have been one of the first things you thought of when you  read the word structure. However, as mentioned above, structures also include items like tables and chairs, which have a lot fewer parts and have much less at stake if they fail.
 					</div>
-					<div class="span6">
+					<div class="col-sm-6">
 				
 				<%= image_tag("pics/GoldenGateBridge.jpg", :alt => "Golden Gate Bridge", :class => 'picpadding') %>
 				
@@ -52,20 +51,20 @@
 				</div>
 				<p><p>
 				<h5><a id="Structures are under Tension, Compression or Both Forces"><span class="sectionheader">Structures are either under tension, compression, or both forces at the same time.</span></a></h5>
-				<div class="row-fluid">
-					<div class="span7">
+				<div class="row">
+					<div class="col-sm-7">
 						A force is a push or pull on an object resulting from its interaction with another object. A force that is a push creates compression. A force that is a pull creates tension. We introduced the concept of tension and compression in the <%= link_to "materials",   materials_path %> section, with a brief overview of how these forces act on the atoms within materials. To review these forces with respect to structures, let's use the chair you are sitting in as an example. Before you sat on it, the chair was already supporting a load, as the chair has to support its own weight without collapsing. This intrinsic weight of the structure is called the dead load. The chair is designed to bear both its dead load and the weight of your body, which in this example is the live load, or non-intrinsic weight. When you sat down in the chair, you exerted an additional force on the chair, a push generated by your weight (the gravitational force on your body) that put additional compression on the chair. Even though you can't see it, that legs of the chair actually get a little bit shorter under compression. When you stand up, the chair returns to its original height. 
 						</div>
-						<div class="span5">
+						<div class="col-sm-5">
 					<%= image_tag("pics/chairandboyinchair2.png", :alt => "picture of a chair and a boy sitting in a chair", :class => 'picpadding') %>
 						</div>
 					</div>
 				<p><p>
-				<div class="row-fluid">
-				<div class="span3">
+				<div class="row">
+				<div class="col-sm-3">
 					<%= image_tag("pics/boyinswing.png", :alt => "picture of a chair and a boy sitting in a chair", :class => 'picpadding') %>
 				</div>
-				<div class="span9">	
+				<div class="col-sm-9">	
 				Imagine instead that you are now sitting on a swing. Unlike the chair which is under compression, the swing is under tension, as its chains are being pulled. When you sit down on a swing, your weight adds additional tension, making the chains just a little bit longer. When you stand up, the chains return to their original length. At this point, you might be thinking that when you sat down on the swing you were still compressing the swing, and you would be correct. The swing is under both tension and compression once you sit on it. 
 				</div>
 				</div>
@@ -87,11 +86,11 @@
 				<p><p>
 				
 				<b>Arch</b> An arch is a structure that spans a distance in compression only. As mentioned above, the ability of a structure to stand depends on both the design and the materials used. In ancient times, most of the materials available, and the designs that were understood, relied on compressive strength. 
-				<div class="row-fluid">
-					<div class="span5">	
+				<div class="row">
+					<div class="col-sm-5">	
 						<%= image_tag("pics/pontdugard.jpg", :alt => "Pont Du Gard", :class => 'picpadding') %>
 					</div>
-					<div class="span7">
+					<div class="col-sm-7">
 						Compression means a push, so each stone or piece of concrete used in an arch pushes against the other pieces of the arch; nothing is ever pulling. 
 						<p><p>
 				Arches were widely used in ancient times, especially by the Ancient Romans. The strength of both the design of the arch and the materials the Romans used to build them is evident by the many that are still standing, some of which are in actual use. 
@@ -99,19 +98,18 @@
 				</div>
 				
 				</div>
-				<div class="row-fluid">
-					<div class="span4">
+				<div class="row">
+					<div class="col-sm-4">
 			
 				<b>Column</b> A column provides vertical support to a structure, and is always under compression. Like an arch, columns need to be built with materials that have compressive strength. However, depending on the height of structure a column can also be under tension if it has horizontal force acting on it, like a skyscraper in the wind. Therefore, some structures need columns made of materials that are strong in tension as well.
 				</div>
-					<div class="span8">
+					<div class="col-sm-8">
 				<%= image_tag("pics/safeway.png", :alt => "Safeway under consruction", :class => 'picpadding') %>
 				</div>
 				</div>
 				<p><p>
 				<b>Beam</b> A beam provides horizontal support to a structure, often connecting two columns. It is always under both compression and tension. We'll go back to the swing example to understand how beams work. When you sit on the seat of swing, especially if it is one of those thick rubber seats, you'll notice that the edges of the swing pull up to wrap under you. The top of the seat is under compression from your weight, and the bottom of the seat is under tension, as it is being pulled up while the top is being pushed down. A common material that you will see in construction is steel, because it is strong in both tension and compression, and it can be cost effectively manufactured.
 				<p><p>
-
 
 				<h5><a id="Structures Change as New Materials and Designs are Created"><span class="sectionheader">Structures change as new materials and designs are created</span></a></h5>
 				Many of the types of structures that are a core part of our every day lives have been around for millennia. There is nothing recent about people using tables, chairs, buildings, bridges, dams, and roads. What has changed over the years are the methods and materials with which we build structures.
@@ -125,27 +123,27 @@
 				<p><p>
 				Making structures is something people start doing as toddlers, when we first learn to stack blocks (which you now know are under compression). In fact, how many blocks a young child can stack is used as an indication of healthy development. Once your child moves beyond blocks there are many great toys and resources for learning about how to build different structures, and building is an incredibly creative and inventive activity. Hopefully this section has given you a little more perspective on the different structures around us. Next we turn to <%= link_to "machines",   machines_path %>  to understand another very large component of our technology landscape.
 							
-	</div>				
-	</div>				
-	</div> <!--span7-->		
+			</div>				
+		</div>				
+	</div> <!--col-sm-8-->		
 
-	<div class="span2">			
+	<div class="col-sm-2">			
 		<br><br><br>
 		<div class="factspink"><a class="facts1" <%= link_to "20%",    research_path %></a></div>
 		<br>
 		Women still hold only 20% of computer science jobs.
 		<hr>
 
-		<div class="row-fluid">
-			<div class="span12">				
-			</div> <!--span12-->
+		<div class="row">
+			<div class="col-sm-12">				
+			</div> <!--col-sm-12-->
 		</div> <!--row-->
 
-		<div class="row-fluid" style="text-align:center">
+		<div class="row" style="text-align:center">
 			<%= render "layouts/skyscraperad" %>						
 		</div> <!--row-->	
 
-	</div> <!--span3-->
+	</div> <!--col-sm-3-->
 
 </div>	<!--row-->
 </div>

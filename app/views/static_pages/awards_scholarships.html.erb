@@ -1,19 +1,16 @@
-<div class="container-fluid">
 <% provide(:title, 'Engineering and Computer Science Scholarships recommendation list by 2025 Labs') %>
 <% provide(:description, 'This page includes both scholarships we know about as well as resources that can help you search for scholarships.') %>
 
-<div class="row featurette">
+<div class="row">
+	
 	<div class="col-sm-2">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-12">
-				<span class="visible-md visible-lg">
-					<%= render "static_pages/resourcesnav" %>
-					</span>
-				</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<%= render "static_pages/resourcesnav" %>
 			</div>
-		</div>
+		</div>	
 	</div>
+	
 	
     <div class="col-sm-7">
 		<% @resource_type.each do |resource_type| %>
@@ -42,12 +39,12 @@
 			<div class="col-sm-9">
 				<span class="colortxt2"><%=resource.title.html_safe %></span>
 				<%=resource.description.html_safe %>			
-			</div> <!--col-sm-9-->	
+			</div> <!--span9-->	
 		</div><!--row-->	
 
 		<div class="row">
 			<div class="col-sm-12">
-			</div> <!--col-sm-12-->	
+			</div> <!--span12-->	
 		</div> <!--row-->
 		<% end %>
 		
@@ -55,29 +52,25 @@
 		
 		<a > <img class="center" src=""> </a>
 						
-    </div> <!--col-sm-7-->	
+    </div> <!--span7-->	
 		
 	<div class="col-sm-3">	
-		<span class="visible-md visible-lg">	
-		<div class="container-fluid">
 		<div class="row">
 			<br><br><br>
 			<div class="facts"><a class="facts1" <%= link_to "74%",    research_path %></a></div>
 			<br>
 			According to the Girl Scouts Research Institute, 74% of high school girls across the country are interested in STEM subjects, but for girls interested in STEM, STEM is just one area of interest among many.
 			<hr>
-    	</div> <!--col-sm-12-->
-    	</div>
+    	</div> <!--span12-->
+
         <div class="row">
 			<div class="col-sm-12">				
-			</div> <!--col-sm-12-->
+			</div> <!--span12-->
 		</div> <!--row-->
 
 		<div class="row" style="text-align:center">
 			<%= render "layouts/amazonskyscraperadgc" %>				
 		</div> <!--row-->
-		</span>
-	</div> <!--col-sm-3-->	
+	</div> <!--span3-->	
 		
 </div>	<!--row-->
-</div>

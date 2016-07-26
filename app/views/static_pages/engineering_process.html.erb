@@ -1,20 +1,18 @@
 <% provide(:title, 'Introducing the Engineering Process to Kids: 2025 Labs') %>
 <% provide(:description, 'We take a comprehensive approach to the various Engineering processes consisting of the Engineering Design Process, Research and Development, Product Innovation, Failure Analysis, and Reverse Engineering.') %>
 
+<div class="row">
 
-<div class="row-fluid">
-
-	<div class="span2">
+	<div class="col-sm-2">
 		<%= render "contentnav" %>
 	</div>
 
-
-	<div class="span8">
+	<div class="col-sm-8">
 		<%= image_tag("pics/eptag.png", :alt => "Engineering Process Icon", :class => "iconleft") %>
 		<h2>&#011;  Engineering Process</h2>
 		
-		<div class="row-fluid">
-			<div class="span3">
+		<div class="row">
+			<div class="col-sm-3">
 				<div class="mainideas">
 					<div class="mainideasheader">
 						Main Ideas
@@ -35,9 +33,9 @@
 					<a class="mainideastopic"<%= link_to "Reverse Engineering is a process by which Engineers take apart an already-built device to understand the details of what it does and how it works", :anchor => "Reverse" %></a>
 					<br><br>
 				</div> <!-- main ideas section close -->
-			</div> <!-- span 3 for main ideas close -->
+			</div> <!--col-sm-3 for main ideas close -->
 		
-		<div class="span9">
+		<div class="col-sm-9">
 			
 		<h5><a id="Design"><span class="sectionheader">The &#34;Engineering Design Process&#34; is not the only Engineering process</span></a></h5>
 
@@ -102,16 +100,16 @@
 		Failure analysis was also conducted on the failed <a href="http://www.nasa.gov/mission_pages/apollo/missions/apollo13.html" target="_blank">Apollo 13 mission</a> to the moon, which was aborted due to an explosion on board. Engineering activities were required to adapt to the situation and get the spacecraft safely back to Earth. In addition, failure analysis was conducted after the mission, which determined that the explosion resulted from a voltage change with unanticipated impacts.
 	
 			
-	<div class="row-fluid">
-		<div class="span9">
+	<div class="row">
+		<div class="col-sm-9">
 			<p> One additional example of failure analysis is the collapse of the I-35W Mississippi River Bridge in Minneapolis in 2007 (see video at right of the bridge collapse). At the time, portions of the bridge were under construction, with some lanes closed and heavy vehicles on the bridge. It was rush hour and the car traffic on the bridge was quite congested in the remaining lanes. After significant review by the National Transportation Safety Board (NTSB), it was determined that there was a problem in the original design of the bridge, specifically under-sized supporting elements called gusset plates. Over the years, layers of concrete had added weight to the bridge, and the bridge design was insufficient to safely hold the then-current heavy load of construction vehicles and rush hour traffic. Understanding what went wrong through the process of failure analysis, helps engineers understand how to fix what's broken and prevent repeat failures.
-		</div> <!--span9-->	
+		</div> <!--col-sm-9-->	
 		
-		<div class="span3">
+		<div class="col-sm-3">
 			<br>
 			<%= image_tag("pics/35wBridgecollapse-video.gif", :alt => "35-W bridge collapse 2007") %>
 			<span class="caption">Minneapolis interstate 35-W bridge collapse</span>
-		</div> <!--span3-->
+		</div> <!--col-sm-3-->
 	</div> <!--row-->
 
 			<h5><a id="Reverse"><span class="sectionheader">Reverse Engineering is a process by which Engineers take apart an already-built device to understand the details of what it does and how it works</span></a></h5>				
@@ -125,13 +123,12 @@
 			<h5><a id="Summary"><span class="sectionheader">Summary </span></a></h5>
 			The Engineering Design Process is the most discussed of the Engineering processes, however the big technological advances come from the processes of R&D and Product Innovation. The Engineering Design Processes is critical for actually creating technology (a product, service, device or structure) when a specific need has been identified. Some Engineering processes happen <i>after</i> the piece of technology has already been created, and help engineers understand how it works, or why it failed. Each process has a particular role to play in the innovating, creating and maintaining of useful technology. In the next section we turn to <%= link_to "machines",   machines_path %>, technology we use everyday that is a product of the Engineering processes.
 
-	
 		</div> <!--span 9 for contents-->
 	</div> <!-- row definition for main content section-->
-</div><!--span 8 for middle section -->	
+</div><!--col-sm-8 for middle section -->	
 
-	<div class="span2">	
-		<div class="row-fluid">
+	<div class="col-sm-2">	
+		<div class="row">
 			<br><br><br>
 			
 			An <a href="http://www.oregonlive.com/hillsboro/index.ssf/2011/12/intel_survey_of_teenagers_show.html" target="_blank">Intel survey from 2011</a> showed that:
@@ -139,14 +136,14 @@
 			<hr>
 		</div> <!--row-->	
 			
-		<div class="row-fluid">
-			<div class="span12">				
-			</div> <!--span12-->
+		<div class="row">
+			<div class="col-sm-12">				
+			</div> <!--col-sm-12-->
 		</div> <!--row-->
 
-		<div class="row-fluid" style="text-align:center">
+		<div class="row" style="text-align:center">
 			<%= render "layouts/skyscraperad" %>				
 		</div> <!--row-->
 					
-	</div> <!--span2-->		
+	</div> <!--col-sm-2-->		
 </div>	<!--row-->

@@ -1,33 +1,33 @@
+<div class="container-fluid">
 <% provide(:title, 'Contact Us to Learn More About Introducing Kids to Engineering: 2025 Labs') %>
 <% provide(:description, 'Contact us to learn more about introducing kids to engineering.  We are Building Future Engineers.') %>
 
-<div class="row-fluid">
+<div class="row featurette">
 
-	<div class="span3">
-		<a href="http://www.2025kids.com" target="_blank"><%= image_tag("pics/all-blocks-padded.png", :alt => "2025 Labs kids content areas") %> </a>
-
-	</div>	<!--span2-->
-
+	<div class="col-sm-3">
+	<span class="visible-md visible-lg">
+		<a href="http://www.2025kids.com" target="_blank"><%= image_tag("pics/all-blocks-padded.png", :alt => "2025 Labs kids content areas", :class=> 'featurette-image img-responsive center-block') %> </a>
+		</span>
+	</div>	<!--col-sm-2-->
 	
-	<div class="span6">
+	<div class="col-sm-6">
 		<h2>Contact</h2>
   		<p>We would love to hear from you! Please contact us at:</p>
 		</br>
 		<p><a href="mailto:info@2025labs.com" style="color:#0099CC">info@2025labs.com</a></p>
 		<p>455 Los Gatos Blvd, Suite 104</p>
 		<p>Los Gatos, CA 95032</p>
-		
-	</div> <!--span4-->
+	</div> <!--col-sm-6->
 
-	<div class="span3">
+	<div class="col-sm-3">
 		<div class="row-fluid">
 			<br><br>
 			<div class="facts"><a class="facts1" <%= link_to "30%",    research_path %></a></div>
 			<br>
 			According to Change the Equation, nearly a third of Americans would reather clean the bathroom than do a math problem.
-		</div><!--row-->
+		</div><!--4row-->
 
-
-	</div> <!--span3-->	
+	</div> <!--col-sm-3-->	
 	
 </div> <!--row-->
+</div>

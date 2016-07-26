@@ -14,7 +14,8 @@
 //= require jquery_ujs
 //= require jquery.cycle2
 //= require jquery.cycle2.all
-//= require_tree .
+
+//= require bootstrap.min
 
 
 

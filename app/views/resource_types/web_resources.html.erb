@@ -1,63 +1,64 @@
-<% provide(:title, 'Web Resouces') %>
+<% provide(:title, 'Web Resources') %>
 
-<div class="row-fluid">
-	
-	<div class="span2">
-		<div class="row-fluid">
-			<div class="span12">
+<div class="row featurette">
+	<div class="col-xs-2">
+		<div class="col-xs-12">
 				<%= render "static_pages/resourcesnav" %>
-			</div>
-		</div>	
+		</div>
+			
 	</div>
-	
-	
-    <div class="span7">
+
+    <div class="col-sm-7">
 		<% @resource_type.each do |resource_type| %>
 		<h2> <%= resource_type.r_type.html_safe%> </h2>
 		<%= resource_type.description.html_safe%><br><br>
 		<% end %>
 		
 		<% @resources.each do |resource| %>
-		<div class="row-fluid">
-			<div class="span3">
-				<%= link_to image_tag(resource.engineering_process),   engineering_process_path %>
-				<%= link_to image_tag(resource.machines),   machines_path %>
+		<div class="row">
+			<div class="col-sm-3">
+				<%= link_to image_tag(resource.engineering_process, :class=> 'featurette-image img-responsive center-block'),   engineering_process_path %>
+				<%= link_to image_tag(resource.machines, :class=> 'featurette-image img-responsive center-block'),   machines_path %>
 				<%= link_to image_tag(resource.energy),   energy_path %>
 				<%= link_to image_tag(resource.computing),   computing_path %>
 				<p><%= resource.ages %>	
 			</div>
 
-			<div class="span9">
+			<div class="col-sm-9">
 				<span class="colortxt2"><%=resource.title.html_safe %></span>
 				<%=resource.description.html_safe %>			
 			</div> <!--span9-->	
 		</div><!--row-->	
 
-		<div class="row-fluid">
-			<div class="span12">
-			</div> <!--span12-->	
+		<div class="row">
+			<div class="col-sm-12">
+			</div> <!--col-sm-12-->	
 		</div> <!--row-->
 		<% end %>
 		
 		<a href="mailto:info@2025labs.com?Subject=Suggestion%20For%20Web%20Resources" target="_top"> <img class="center"src="images/resource_suggestion.png"> </a>
 						
-    </div> <!--span7-->	
-		
-	<div class="span3">	
-		<div class="row-fluid">
+    </div> <!--col-sm-7-->	
+	
+	
+	<div class="col-sm-3">	
+			<div class="row featurette">
 			<br><br>
-			<a href="research.html"> <img class="rounded" src="/assets/facts/women7pctCIOs.png"  alt="demo stats"> </a>
+			<span class="visible-lg"><a href="research.html"> <img class="rounded" src="/assets/facts/women7pctCIOs.png"  alt="demo stats"> </a> </span>
 			<hr>
-    	</div> <!--span12-->
+    		</div> <!--row-->
 
-        <div class="row-fluid">
-			<div class="span12">				
-			</div> <!--span12-->
-		</div> <!--row-->
+        	<div class="row featurette">
+				<div class="col-sm-12">		
+				</div> <!--col-sm-12-->
+			</div> <!--row-->
 
-		<div class="row-fluid" style="text-align:center">
-			<%= render "layouts/amazonskyscraperadgc" %>				
+		<div class="row" style="text-align:center">
+			<span class="hidden-xs hidden-sm hidden-md">
+			<%= render "layouts/amazonskyscraperadgc" %>
+			</span>		
 		</div> <!--row-->
-	</div> <!--span3-->	
+	</div> <!--col-sm-3-->	
+	
 		
 </div>	<!--row-->

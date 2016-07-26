@@ -1,19 +1,16 @@
-<div class="container-fluid">
 <% provide(:title, 'Engineering for Kids Internet Resources: 2025 Labs') %>
 <% provide(:description, 'Links to useful engineering related web sites, which includes some educational (and entertaining!) videos, games and activities.') %>
+
+<div class="row featurette">
 	
-	<div class="row featurette">
 	<div class="col-sm-2">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-12">
-				<span class="visible-md visible-lg">
-					<%= render "static_pages/resourcesnav" %>
-					</span>
-				</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<%= render "static_pages/resourcesnav" %>
 			</div>
-		</div>
+		</div>	
 	</div>
+	
 	
     <div class="col-sm-7">
 		<% @resource_type.each do |resource_type| %>
@@ -25,15 +22,15 @@
 		<div class="row">
 			<div class="col-sm-3">
 				<% unless resource.engineering_process.blank? %>
-					<%= link_to image_tag(resource.engineering_process, :class=> 'featurette-image img-responsive center-block', :class => 'resourcebutton'),   engineering_process_path %>
+					<%= link_to image_tag(resource.engineering_process, :class => 'resourcebutton'),   engineering_process_path %>
 				<% end %>
 
 				<% unless resource.materials.blank? %>
-					<%= link_to image_tag(resource.materials, :class=> 'featurette-image img-responsive center-block', :class => 'resourcebutton'),   materials_path %>
+					<%= link_to image_tag(resource.materials, :class => 'resourcebutton'),   materials_path %>
 				<% end %>
 					
 				<% unless resource.structures.blank? %>
-					<%= link_to image_tag(resource.structures, :class=> 'featurette-image img-responsive center-block', :class => 'resourcebutton'),   structures_path %>
+					<%= link_to image_tag(resource.structures, :class => 'resourcebutton'),   structures_path %>
 				<% end %>
 
 				<% unless resource.machines.blank? %>
@@ -41,11 +38,11 @@
 				<% end %>
 
 				<% unless resource.energy.blank? %>
-					<%= link_to image_tag(resource.energy, :class=> 'featurette-image img-responsive center-block', :class => 'resourcebutton'),   energy_path %>
+					<%= link_to image_tag(resource.energy, :class => 'resourcebutton'),   energy_path %>
 				<% end %>
 
 				<% unless resource.computing.blank? %>
-					<%= link_to image_tag(resource.computing, :class=> 'featurette-image img-responsive center-block', :class => 'resourcebutton'),   computing_path %>
+					<%= link_to image_tag(resource.computing, :class => 'resourcebutton'),   computing_path %>
 				<% end %>
 				
 				<p><%= resource.ages %>	
@@ -59,40 +56,31 @@
 
 		<div class="row">
 			<div class="col-sm-12">
-			
 			</div> <!--col-sm-12-->	
 		</div> <!--row-->
 		<% end %>
 		
-		<a href="mailto:info@2025labs.com?Subject=Suggestion%20For%20Web%20Resources" target="_top"><%= image_tag("pics/resource_suggestion.png", :class=> 'featurette-image img-responsive center-block', :alt => "suggest a resource", :class =>"center") %></a>
+		<a href="mailto:info@2025labs.com?Subject=Suggestion%20For%20Web%20Resources" target="_top"><%= image_tag("pics/resource_suggestion.png", :alt => "suggest a resource", :class =>"center") %></a>
 						
     </div> <!--col-sm-7-->	
-
+		
 	<div class="col-sm-3">	
-		<div class="container-fluid">	
 		<div class="row">
 			<br><br><br>
-			<span class="visible-sm visible-md visible-lg">
 			<div class="facts"><a class="facts1" <%= link_to "7%",    research_path %></a></div>
 			<br>
 			According to CNNMoney, only 7% of corporate CIOs (Chief Information Officers) are women.
 			<hr>
-			</span>
     	</div> <!--col-sm-12-->
-    	</div>
+
         <div class="row">
-			<div class="col-sm-12">		
-			<span class="visible-sm visible-md visible-lg">
-			</span>		
+			<div class="col-sm-12">				
 			</div> <!--col-sm-12-->
 		</div> <!--row-->
 
 		<div class="row" style="text-align:center">
-			<span class="visible-sm visible-md visible-lg">
-			<iframe src="http://rcm-na.amazon-adsystem.com/e/cm?t=2025labs-20&o=1&p=14&l=ur1&category=stem&banner=09PFBRBM7S1P6G18CPG2&f=ifr&linkID=UPKW3XOG5NQIOX4H" width="160" height="600" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>		
-			</span>	
+			<iframe src="http://rcm-na.amazon-adsystem.com/e/cm?t=2025labs-20&o=1&p=14&l=ur1&category=stem&banner=09PFBRBM7S1P6G18CPG2&f=ifr&linkID=UPKW3XOG5NQIOX4H" width="160" height="600" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>			
 		</div> <!--row-->
 	</div> <!--col-sm-3-->	
 		
 </div>	<!--row-->
-</div>

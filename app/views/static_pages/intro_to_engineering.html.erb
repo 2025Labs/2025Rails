@@ -1,12 +1,12 @@
 <% provide(:title, 'Introducing Kids to Engineering: 2025 Labs') %>
 <% provide(:description, 'We introduce kids to Engineering and build their technological literacy. We use a lightweight, big-picture overview of Engineering involving a four-part framework: Engineering Process, Machines, Energy, and Computing.') %>
 
-<div class="row-fluid">
-	<div class="span2">
+<div class="row">
+	<div class="col-sm-2">
 		<%= render "contentnav" %>
 	</div>
 
-	<div class="span7">
+	<div class="col-sm-7">
 		<h2>Intro to Engineering</h2>
 		We want to get more kids interested in Engineering. (See our <%= link_to "Research",   research_path %> page for motivation on that front.) We think that requires a combination of introducing kids to Engineering and building their technological literacy. We have discovered that figuring out how to build our kids' technological literacy often meant building our own.
 		<p></p>
@@ -20,90 +20,87 @@
 
 		What you will learn in this introductory area of the website:
 		<p></p>
-		<div class="row-fluid">
-			<div class="span1">
+		<div class="row">
+			<div class="col-sm-1">
 				<%= link_to image_tag("pics/eptag.png", :alt => "Engineering Process Icon", :class => "iconleft"), engineering_process_path %>
-			</div> <!-- span 1 -->
+			</div> <!-- col-sm-1 -->
 			
-			<div class="span11">
+			<div class="col-sm-11">
 				<b><%= link_to "Engineering Process",   engineering_process_path %></b> Our framework starts with an explanation of the processes engineers use to turn an idea into technology, or to accomplish other goals found under the umbrella of Engineering.
-			</div> <!-- span 11 -->
+			</div> <!-- col-sm-11 -->
 		</div> <!-- row -->
 		</br>
 
-		<div class="row-fluid">
-			<div class="span1">
+		<div class="row">
+			<div class="col-sm-1">
 				<%= link_to image_tag("pics/mttag.png", :alt => "Materials Icon", :class => "iconleft"), materials_path %>	
 			</div> <!-- span 1 -->
 			
-			<div class="span11">
+			<div class="col-sm-11">
 				<b><%= link_to "Materials",  materials_path %></b> You will learn about some history with respect to materials discovery, key properties of materials, selecting materials as part of the engineering design process based on planned functions, and some details about specific materials of interest in our modern era.
-			</div> <!-- span 11 -->
+			</div> <!-- col-sm-11 -->
 		</div> <!-- row -->
 		</br>
 
-		<div class="row-fluid">
-			<div class="span1">
+		<div class="row">
+			<div class="col-sm-1">
 				<%= link_to image_tag("pics/stag.png", :alt => "Structures Icon", :class => "iconleft"), structures_path %>
-			</div> <!-- span 1 -->
+			</div> <!-- col-sm-1 -->
 			
-			<div class="span11">
+			<div class="col-sm-11">
 				<b><%= link_to "Structures",  structures_path %></b> You will learn about key concepts in the engineering of structures, including the definition of a "structure", forces that act on structures, and key elements such as beams, columns, and arches.
-			</div> <!-- span 11 -->
+			</div> <!-- col-sm-11 -->
 		</div> <!-- row -->
 		</br>
 
-		<div class="row-fluid">
-			<div class="span1">
+		<div class="row">
+			<div class="col-sm-1">
 				<%= link_to image_tag("pics/mtag.png", :alt => "Machines Icon", :class => "iconleft"), machines_path %>
-			</div> <!-- span 1 -->
+			</div> <!-- col-sm-1 -->
 			
-			<div class="span11">
+			<div class="col-sm-11">
 				<b><%= link_to "Machines",   machines_path %></b> You will learn that machines are one type of technology created by engineers, and you will get an introduction into how machines make work easier.
-			</div> <!-- span 11 -->
+			</div> <!-- col-sm-11 -->
 		</div> <!-- row -->
 		</br>
 		
-		<div class="row-fluid">
-			<div class="span1">
+		<div class="row">
+			<div class="col-sm-1">
 				<%= link_to image_tag("pics/entag.png", :alt => "Energy Icon", :class => "iconleft"), energy_path %>
-			</div> <!-- span 1 -->
+			</div> <!-- col-sm-1 -->
 			
-			<div class="span11">
+			<div class="col-sm-11">
 				<b><%= link_to "Energy",   energy_path %></b> Technology doesn't exist or work without energy, so you will learn how we collect and consume the energy that powers the devices in our daily lives.
-			</div> <!-- span 11 -->
+			</div> <!-- col-sm-11 -->
 		</div> <!-- row -->
 		</br>
 
-
-		<div class="row-fluid">
-			<div class="span1">
+		<div class="row">
+			<div class="col-sm-1">
 				<%= link_to image_tag("pics/ctag.png", :alt => "Computing Icon", :class => "iconleft"), computing_path %>
-			</div> <!-- span 3 -->
+			</div> <!-- col-sm-3 -->
 		
-			<div class="span11">
+			<div class="col-sm-11">
 				<b><%= link_to "Computing",   computing_path %></b> Since we live in the information age, any study of engineering is incomplete without an overview of computing. In this section you will learn what "computing" means, as well as some very basic knowledge of computer architecture, communications (networking), and the ever-increasing degree to which our lives are supported by computerized automation.
-			</div> <!-- span 11 -->
+			</div> <!-- col-sm-11 -->
 		</div> <!-- row -->
-    </div> <!--span7-->	
+    </div> <!--col-sm-7-->	
 
-	<div class="span3">	
+	<div class="col-sm-3">	
 		<br><br><%= link_to image_tag("facts/sciedu.png", :alt => "Science is taught daily in just 1 in 5 classrooms", :class => "iconleft"), research_path %>
 		<hr>
 		
-		<div class="row-fluid">
-			<div class="span12">				
-			</div> <!--span12-->
+		<div class="row">
+			<div class="col-sm-12">				
+			</div> <!--col-sm-12-->
 		</div> <!--row-->
 
-
-		<div class="row-fluid" style="text-align:center">	
+		<div class="row" style="text-align:center">	
 			<iframe src="http://rcm-na.amazon-adsystem.com/e/cm?t=2025labs-20&o=1&p=29&l=ur1&category=gift_certificates&banner=14RFZN99KWC9ZBXB4382&f=ifr" width="120" height="600" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
-			
 			
 			</div> <!--row-->
 			
-	</div>	<!--span3-->
+	</div>	<!--col-sm-3-->
 </div><!--row-->
 
 

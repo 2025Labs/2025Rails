@@ -1,4 +1,6 @@
 @import "bootstrap";
+/*@import "bootstrap-sprockets";*/
+
 
 /* defining the colors*/
 $logo_color: #FF1F00;
@@ -14,9 +16,10 @@ $computing_color: #F74D9C;
 $video_area: #f6f6f6;
 $correct_color: #008000;
 
+
 .logo_mainbkgd{
 	background-color: $logo_color;
-	padding-left:10px;
+	padding-left:30px;
 	padding-right:10px;
 	padding-bottom:10px;
 	padding-top:10px;
@@ -27,13 +30,23 @@ $correct_color: #008000;
 	font-size: 16px;
 	line-height: 20px;
 	text-decoration:none;
+	padding-left: 20px;
+	margin-bottom:80px;
 }
 /* static or fixed navbar-static-top vs navbar-fixed-top was extend navbar-default*/
 .navbar-2025{
 	@extend .navbar-default;	
-#	background-color: $logo_color;
+	background-color: genesis white;
 	border-color: $logo_color;
+	padding-left: 20px;
 }
+
+.navbar-header-2025{
+	@extend .navbar-header;	
+	background-color: $logo_color;
+
+}
+
 .navbar-2025-bs2{
 	@extend .navbar-static-top;	
 #	background-color: $logo_color;
@@ -111,6 +124,11 @@ img.center {
 
 .catbutton {
 	padding-bottom: 20px;
+}
+
+.navbutton {
+	padding-right: 20px;
+	float: right;
 }
 
 .resourcebutton {
@@ -274,23 +292,26 @@ a.mainideastopic:active {
 a.facts1:active {
 	color: #fff;
 	text-decoration:none;
+
 }
 
 a.facts1:link {
 	color: #fff;
 	text-decoration:none;
+
 }
 
 a.facts1:visited {
 	color: #fff;
 	text-decoration:none;
+
 }
 
 a.facts1:hover {
 	color: #0099cc;
 	text-decoration:none;
-}
 
+}
 
 /*Styling  the footer main links */
 a.footheader:link {
@@ -415,6 +436,35 @@ nav ul li a {
 
 }
 
+.featurette {
+padding-top: 0px;
+overflow: hidden; /* Clear floats */
+}
+
+featurette-image {
+margin-top: −120px; /* Vertically center image with the text */
+}
+
+.featurette-image.pull-left {
+margin-right: 40px;
+}
+
+.featurette-image.pull-right {
+margin-left: 40px;
+}
+
+.thumbnail {
+	border: 0px;
+}
+
+
+h2
+ {
+     padding: 0;
+     margin: 0;
+     padding-top: -20px;
+
+ }
 
 /* This section allows for the video size to be responsive */
 /* Copyright (c) 2011 ZURB, http://www.zurb.com/ */	
@@ -442,7 +492,31 @@ nav ul li a {
 }
 
 @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
-	  .flex-video { padding-top: 0; }
+	  .flex-video { padding-top: 0; 
+	  
+  		}
 	}
 
+/* This section allows you to change the spacing on the header nav graphics so you aren't stuck with 20 px */
+.row .span2NoGutter { width:16%; margin-left:.66667%} // 100% / 6 col
+.row .span3NoGutter { width:24.5%; margin-left:.59%} // 100% / 4 col
+.row .span6NoGutter { width:49.9%; margin-left:-.4%} // 100% / 2 col
 
+#menu {
+    list-style:none;
+    padding-left:0;
+	margin-left: 0;
+	z-index:10;
+}
+
+.container-banner {
+	padding-left: 38px;
+	padding-right: 38px;
+}
+
+.container-header {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+ 
