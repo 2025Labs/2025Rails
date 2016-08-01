@@ -1,59 +1,69 @@
 <div class="container-fluid">
-<% provide(:title, 'Engineering Resources for Kids: 2025 Labs') %>
-<% provide(:description, 'Useful resources that you can use to expose kids to Engineering. They include Web Resources, Toys and Games, Camps and Events, Awards and Scholarships, and Books.') %>
 
-<div class="row featurette">
-	<div class="col-sm-2">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-12">
-				<span class="visible-sm visible-md visible-lg">
-					<%= render "static_pages/resourcesnav" %>
+	<div class="slidearea" style="padding-bottom: 20px; padding-left: 10px; padding-right: 10px; padding-top: 10px;">
+		<% provide(:title, 'Engineering Resources for Kids: 2025 Labs') %>
+		<% provide(:description, 'Useful resources that you can use to expose kids to Engineering. They include Web Resources, Toys and Games, Camps and Events, Awards and Scholarships, and Books.') %>
+
+		<div class="row featurette grid-divider">
+
+			<div class="col-sm-2">
+
+				<!-- <div class="container-fluid"> -->
+					<!-- <div class="row"> -->
+						<div class="col-xs-12">
+
+							<span class="visible-sm visible-md visible-lg">
+								<%= render "static_pages/resourcesnav" %>
+							</span>
+						</div>
+					<!-- </div> -->
+				<!-- </div> -->
+			</div>
+			
+			<div class="col-sm-7" >
+			<div class="col-padding1">
+				<h2>Resources</h2>
+					<!-- <div class ="resources-title" > -->
+					This section contains references to useful resources that you can use to expose kids to Engineering. Those resources include: 
+					<!-- </div> -->
+					</br>
+					<% @resource_types.each do |resource_type| %>
+					<%= link_to resource_type.r_type,   resource_type.r_path %> <%=resource_type.description %>
+					</br>
+					</br>
+					<% end %>
+
+						Please let us know what additional resources you would like to see!  
+						</br>
+						</br>  
+						<a href="mailto:info@2025labs.com?Subject=Suggestion%20For%20Web%20Resources" target="_top"><%= image_tag("pics/resource_suggestion.png", :alt => "suggest a resource", :class =>"center") %></a></div>
+			</div> <!--col-sm-7-->	
+			 
+			<div class="col-sm-3" >	
+			 <div class="col-padding2">
+				<div class="row">
+						<br>
+
+							<span class="visible-sm visible-md visible-lg">
+								<%= link_to image_tag("facts/engrspec_gender.png", :class=> 'featurette-image img-responsive center-block', :alt => "The three most common Engineering Specializations are mechanical, civil, and electrical. However women gravitate toward environmental, biomedical and chemical. Mechanical and electrical are near the bottom for women"),   research_path %>
+							</span> 
+				
+				</div> 
+
+					<div class="row">
+						<div class="col-sm-12"></div>
+					</div>		
+					<hr>
+				<div class="row" style="text-align: center;">
+					<span class="visible-sm visible-md visible-lg">
+					<iframe src="http://rcm-na.amazon-adsystem.com/e/cm?t=2025labs-20&o=1&p=14&l=ur1&category=toysandgames&banner=1KGQQG9H192Y57XBM082&f=ifr&linkID=PSNNEUPXGDEXGILS" width="160" height="600" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 					</span>
-				</div>
+				</div>	
 			</div>
 		</div>
+		</div>	<!--row-->
 	</div>
-	
-	<div class="col-sm-7">
-		<h2>Resources</h2>
-		<div clas ="row">
-		This section contains references to useful resources that you can use to expose kids to Engineering. Those resources include: 
-		</div>
-		</br>
-		<% @resource_types.each do |resource_type| %>
-		<%= link_to resource_type.r_type,   resource_type.r_path %> <%=resource_type.description %>
-		</br>
-		</br>
-		<% end %>
-
-		Please let us know what additional resources you would like to see!  
-		</br>
-		</br>  
-		<a href="mailto:info@2025labs.com?Subject=Suggestion%20For%20Web%20Resources" target="_top"><%= image_tag("pics/resource_suggestion.png", :alt => "suggest a resource", :class =>"center") %></a>
-	
-	</div> <!--col-sm-7-->	
-
-	<div class="col-sm-3">	
-		<div class="row featurette">
-			<br><br>
-			<span class="visible-sm visible-md visible-lg">
-			<%= link_to image_tag("facts/engrspec_gender.png", :class=> 'featurette-image img-responsive center-block', :alt => "The three most common Engineering Specializations are mechanical, civil, and electrical. However women gravitate toward environmental, biomedical and chemical. Mechanical and electrical are near the bottom for women"),   research_path %>
-			</span>
-			<hr>
-		</div> <!--row-->
-		
-		<div class="row">
-			<div class="col-sm-12">				
-			</div> <!--col-sm-12-->
-		</div> <!--row-->
-
-		<div class="row" style="text-align:center">
-		<span class="visible-sm visible-md visible-lg">
-			<iframe src="http://rcm-na.amazon-adsystem.com/e/cm?t=2025labs-20&o=1&p=14&l=ur1&category=toysandgames&banner=1KGQQG9H192Y57XBM082&f=ifr&linkID=PSNNEUPXGDEXGILS" width="160" height="600" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
-			</span>
-			
-		</div> <!--row-->	
-	</div> <!--col-sm-3-->		
-</div>	<!--row-->
 </div>
+
+
+

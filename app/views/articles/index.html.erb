@@ -1,3 +1,8 @@
+<div class="container-fluid" >
+	
+	<div class="slidearea" style="padding-bottom: 20px; padding-left: 10px; padding-right: 10px;">
+
+
 <% provide(:title, 'Research on Engineering Demographics, Income, Gender, and Race: 2025 Labs') %>
 <% provide(:description, 'Research on Engineering Demographics, Income, Gender, and Race. For example, women comprise 18% of Engineering majors and only 7% of corporate CIOs.') %>
  <div class="container-fluid">	
@@ -34,17 +39,20 @@
 	</div> <!--col-sm-2-->	
 
 </div> <!--row-->	
+<hr>
 
 <div class="row">
 	<div class="col-sm-12">
 	</div>
 </div>
 <br>
-<div class="row featurette">
+<div class="row featurette grid-divider-research">
 	<div class="col-sm-9">
+
 		<% @articles.each do |article| %>
 		<div class="row">
 			<div class="col-sm-2">
+
 				<%= image_tag(article.education) %>
 				<%= image_tag(article.gender) %>
 				<%= image_tag(article.race) %>
@@ -53,15 +61,17 @@
 			</div><!--col-sm-2-->
 	
 			<div class="col-sm-1">
+			<div class="col-padding1">
 			<span class=" visible-sm visible-md visible-lg">
 				<%= image_tag(article.source_logo, :class=> 'featurette-image img-responsive center-block') %>
-				</span>
+				</span></div>
 			</div><!--col-sm-1-->
 
     		<div class="col-sm-9">
-
+    			
 				<span class="colortxt2"><%=article.title.html_safe%></span>
 				<%=article.summary.html_safe %>	
+				
 			</div> <!--col-sm-9-->
 		</div><!--row-->
 		
@@ -78,6 +88,7 @@
 	</div>	<!--col-sm-9-->
 		
 	<div class="col-sm-3">
+		 <div class="col-padding2">
 		<div class="container-fluid">	
 			<span class="visible-sm visible-md visible-lg">
 				<div class="row featurette">
@@ -96,9 +107,10 @@
 			<iframe src="http://rcm-na.amazon-adsystem.com/e/cm?t=2025labs-20&o=1&p=14&l=ur1&category=stem&banner=09PFBRBM7S1P6G18CPG2&f=ifr&linkID=UPKW3XOG5NQIOX4H" width="160" height="600" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>	
 			</span>		
 		</div> <!--row-->
-		</span>
+		</span></div>
 	</div> <!--col-sm-3-->
 </div><!--row-->
-	
+</div>
+</div>
 </div>
 

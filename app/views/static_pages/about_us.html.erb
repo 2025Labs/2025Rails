@@ -1,8 +1,9 @@
 <div class="container-fluid">
+<div class="slidearea" style="padding-bottom: 20px; padding-left: 10px; padding-right: 10px; padding-top: 10px;">
 <% provide(:title, 'About Us') %>
 <% provide(:description, 'We are a services company with a social mission to give all kids, regardless of ethnicity, gender or socioeconomic background, the opportunity to become creators') %>
 
-<div class="row featurette">
+<div class="row featurette grid-divider">
 	<div class="col-sm-3">
 	<span class="visible-sm visible-md visible-lg">
 		<%= image_tag("pics/boyoncomputercardboardbridge.png", :alt => "boy playing with robot", :class =>'rounded', :class=> 'featurette-image img-responsive center-block') %> 
@@ -11,6 +12,7 @@
 	</div>
 	
 	<div class="col-sm-6">
+		<div class="col-padding1">
 		<h2>About Us</h2>
 		<span class="colortxt">Who We Are</span><br>
 		We have taken a convoluted path in the creation of this company. Our founder came from an engineering and consulting background and already had a successful consulting business. Then she founded 2025 Labs with a mission is to bring technology literacy to all kids and inspire a more diverse next generation of technology creators. <br><br>
@@ -34,13 +36,14 @@ If we rely, as a society, on expensive summer camps to introduce kids to enginee
 		</br>
 		<span class="colortxt"> Services</span> <br>Visit our services site, <a href="http://www.2025consulting.com" target="_blank">www.2025consulting.com</a>, to find out more about our services. 
 		</br><br>
-		
+		</div>
 	</div> <!--span6-->	
 
 	<div class="col-sm-3">
+		<div class="col-padding2">
 		<span class="visible-sm visible-md visible-lg">
 			<div class="row-fluid">
-				<br><br>
+				
 				<div class="facts"><a class="facts1" <%= link_to "50%",    research_path %></a></div>
 				<br>
 				50% of the 20 woman CEOs in Fortune 500 companies have STEM degrees.
@@ -57,7 +60,8 @@ If we rely, as a society, on expensive summer camps to introduce kids to enginee
 			<%= render "layouts/amazonskyscraperadgc" %>	
 				
 			</div> <!--row-->
-		</span>
+		</span> </div>
     </div>	<!--row span3-->
 </div><!--row-->
+</div>
 </div>

@@ -1,8 +1,11 @@
+
 <div class="container-fluid">
+<div class="slidearea" style="padding-bottom: 20px; padding-left: 10px; padding-right: 10px;">
 <% provide(:title, 'Engineering for Kids Internet Resources: 2025 Labs') %>
 <% provide(:description, 'Links to useful engineering related web sites, which includes some educational (and entertaining!) videos, games and activities.') %>
 	
-	<div class="row featurette">
+	<div class="row featurette grid-divider">
+
 	<div class="col-sm-2">
 		<div class="container-fluid">
 			<div class="row">
@@ -16,6 +19,7 @@
 	</div>
 	
     <div class="col-sm-7">
+    	<div class="col-padding1">
 		<% @resource_type.each do |resource_type| %>
 		<h2> <%= resource_type.r_type.html_safe%> </h2>
 		<%= resource_type.description.html_safe%><br><br>
@@ -65,13 +69,14 @@
 		<% end %>
 		
 		<a href="mailto:info@2025labs.com?Subject=Suggestion%20For%20Web%20Resources" target="_top"><%= image_tag("pics/resource_suggestion.png", :class=> 'featurette-image img-responsive center-block', :alt => "suggest a resource", :class =>"center") %></a>
-						
+		</div>				
     </div> <!--col-sm-7-->	
 
 	<div class="col-sm-3">	
+		<div class="col-padding2">
 		<div class="container-fluid">	
 		<div class="row">
-			<br><br><br>
+			
 			<span class="visible-sm visible-md visible-lg">
 			<div class="facts"><a class="facts1" <%= link_to "7%",    research_path %></a></div>
 			<br>
@@ -92,7 +97,7 @@
 			<iframe src="http://rcm-na.amazon-adsystem.com/e/cm?t=2025labs-20&o=1&p=14&l=ur1&category=stem&banner=09PFBRBM7S1P6G18CPG2&f=ifr&linkID=UPKW3XOG5NQIOX4H" width="160" height="600" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>		
 			</span>	
 		</div> <!--row-->
-	</div> <!--col-sm-3-->	
-		
+	</div> <!--col-sm-3-->	</div>
+	</div>	
 </div>	<!--row-->
 </div>

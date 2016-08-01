@@ -39,7 +39,14 @@ $correct_color: #008000;
 	background-color: genesis white;
 	border-color: $logo_color;
 	padding-left: 20px;
+	margin-bottom: 0;
 }
+
+.resources-title {
+	margin:0;
+	padding:0;
+}
+
 
 .navbar-header-2025{
 	@extend .navbar-header;	
@@ -399,25 +406,80 @@ nav ul ul li {
 	position: relative;
 }
 
-				
 nav ul ul li a:hover {
 	background: #fff;
 }
-		
 
-nav ul li a {
-	display: block; padding: 10px 10px;
+/* Tablet and bigger */
+@media ( min-width: 768px ) {
+    .grid-divider {
+        position: relative;
+        padding: 0;
+      	
+    }
+
+    .grid-divider>[class*='col-'] {
+        position: static;
+
+    }
+    .grid-divider>[class*='col-']:nth-child(n+3):before {
+        content: "";
+        border-left: 1px solid #DDD;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+
+
+    }
+    .col-padding1 {
+        padding: 0 0px;
+
+    }
+    .col-padding2 {
+        padding: 0 15px;
+       
+    }
 }
 
+/* Tablet and bigger */
+@media ( min-width: 768px ) {
+    .grid-divider-research {
+        position: relative;
+        padding: 0;
+      	
+    }
 
-#footer {
+    .grid-divider-research>[class*='col-'] {
+        position: static;
+        
+    }
+    .grid-divider-research>[class*='col-']:nth-child(n+2):before {
+        content: "";
+        border-left: 1px solid #DDD;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        
+
+    }
+    .col-padding1 {
+        padding: 0 0px;
+
+    }
+    .col-padding2 {
+        padding: 0 15px;
+       
+    }
+    
+}
+.footer {
 	/*height: 50px;*/
 	background-color: $video_area;
 	text-align: left;
-	padding-left:40px;
+	padding-left:20px;
 	padding-top:20px;
-	padding-bottom:20px;
-	padding-right:40px;
+	padding-bottom:30px;
+	padding-right:30px;
 	margin-top:40px;
 }
 
@@ -455,8 +517,9 @@ margin-left: 40px;
 
 .thumbnail {
 	border: 0px;
+	box-show: none;
+	margin: 0px;
 }
-
 
 h2
  {
@@ -464,6 +527,21 @@ h2
      margin: 0;
      padding-top: -20px;
 
+ }
+
+ .slidearea {
+  background-color: $video_area;
+  padding-top: 10px;
+  padding-bottom: 200px;
+  padding-left: 30px;
+  padding-right: 30px;
+ }
+ .slidearea-footer {
+  background-color: $video_area;
+  padding-top: -20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 100px;
  }
 
 /* This section allows for the video size to be responsive */

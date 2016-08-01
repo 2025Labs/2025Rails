@@ -1,15 +1,20 @@
-<div class="row featurette"  style="padding-top: 10px">
-	<div class ="thumbnail">
+
+<div class="row featurette"  style="padding-top: 10px; padding-bottom: 10px">
+
+	  <!-- <div class ="thumbnail" >  -->
+	
 		<span class="visible-sm visible-md visible-lg">
-			<%= link_to image_tag("navgraphics/web_resources.png", :class=> 'featurette-image img-responsive center-block', :alt => "Engineering Web Resources", :class => 'catbutton'), resources_web_resources_path %>
-		
+			<%= link_to image_tag("navgraphics/web_resources.png", :class => 'catbutton', :class=> 'featurette-image img-responsive center-block', :alt => "Engineering Web Resources"), resources_web_resources_path %>
+	
+		<br>
 			<%= link_to image_tag("navgraphics/toys_and_games.png", :alt => "Engineering Toys and Games", :class => 'catbutton', :class=> 'featurette-image img-responsive center-block'),  resources_toys_and_games_path %>
 		<br>
-			<%= link_to image_tag("navgraphics/camps_and_events.png", :alt => "Engineering Related Camps and Events", :class=> 'featurette-image img-responsive center-block', :class => 'catbutton'), resources_camps_and_events_path %>
-			
-			<%= link_to image_tag("navgraphics/scholarships.png", :class=> 'featurette-image img-responsive center-block', :alt => "Engineering Scholarships and Awards", :class => 'catbutton'), resources_awards_scholarships_path %>
-	
-			<%= link_to image_tag("navgraphics/books.png", :class=> 'featurette-image img-responsive center-block', :alt => "Engineering Books", :class => 'catbutton'), resources_books_path %>
+			<%= link_to image_tag("navgraphics/camps_and_events.png", :class => 'catbutton', :alt => "Engineering Related Camps and Events", :class=> 'featurette-image img-responsive center-block'), resources_camps_and_events_path %>
+		<br>
+			<%= link_to image_tag("navgraphics/scholarships.png",  :class => 'catbutton', :class=> 'featurette-image img-responsive center-block', :alt => "Engineering Scholarships and Awards"), resources_awards_scholarships_path %>
+		<br>	
+			<%= link_to image_tag("navgraphics/books.png", :class => 'catbutton', :class=> 'featurette-image img-responsive center-block', :alt => "Engineering Books"), resources_books_path %>
 		</span>
-	</div>
+	  <!-- </div>  -->
+	
 </div>

@@ -1,8 +1,9 @@
 <div class="container-fluid">
+<div class="slidearea" style="padding-bottom: 20px; padding-left: 10px; padding-right: 10px;">
 <% provide(:title, 'Engineering and Computer Science Scholarships recommendation list by 2025 Labs') %>
 <% provide(:description, 'This page includes both scholarships we know about as well as resources that can help you search for scholarships.') %>
 
-<div class="row featurette">
+<div class="row featurette grid-divider">
 	<div class="col-sm-2">
 		<div class="container-fluid">
 			<div class="row">
@@ -16,6 +17,7 @@
 	</div>
 	
     <div class="col-sm-7">
+     <div class="col-padding1">
 		<% @resource_type.each do |resource_type| %>
 		<h2> <%= resource_type.r_type.html_safe%> </h2>
 		<%= resource_type.description.html_safe%><br><br>
@@ -54,14 +56,15 @@
 		<a href="mailto:info@2025labs.com?Subject=Suggestion%20For%20Web%20Resources" target="_top"><%= image_tag("pics/resource_suggestion.png", :alt => "suggest a resource", :class =>"center") %></a>
 		
 		<a > <img class="center" src=""> </a>
-						
+	 </div>		
     </div> <!--col-sm-7-->	
 		
 	<div class="col-sm-3">	
+		<div class="col-padding2">
 		<span class="visible-sm visible-md visible-lg">	
 		<div class="container-fluid">
 		<div class="row">
-			<br><br><br>
+		
 			<div class="facts"><a class="facts1" <%= link_to "74%",    research_path %></a></div>
 			<br>
 			According to the Girl Scouts Research Institute, 74% of high school girls across the country are interested in STEM subjects, but for girls interested in STEM, STEM is just one area of interest among many.
@@ -78,6 +81,6 @@
 		</div> <!--row-->
 		</span>
 	</div> <!--col-sm-3-->	
-		
+	</div>	</div>
 </div>	<!--row-->
 </div>
