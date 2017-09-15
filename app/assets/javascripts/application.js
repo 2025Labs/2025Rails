@@ -12,9 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require_tree .
 //= require jquery.cycle2
 //= require jquery.cycle2.all
 
 //= require bootstrap.min
-
-//= require_tree .
