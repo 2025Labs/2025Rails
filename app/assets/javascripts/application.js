@@ -16,7 +16,3 @@
 //= require jquery.cycle2.all
 
 //= require bootstrap.min
-
-
-
-

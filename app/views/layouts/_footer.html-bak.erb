@@ -1,0 +1,41 @@
+<div class="container-fluid" style="padding-left: 30px; padding-right: 30px; padding-top: 0px;">
+
+	<div class="footer" >
+		<div class="row featurette" >
+			<div class="slidearea-footer">
+				<div class="col-sm-3" style="text-align:left">
+					 <%= link_to image_tag("2025_logo.png", :alt => "2025Labs Logo"),   root_path %>
+					 <br>
+					 <span class="muted">Copyright &copy;, 2016 - 2025 Labs LLC</span>
+				</div> <!--col-sm-3-->
+
+
+				<div class="col-sm-3" style="text-align:left">
+					<a class="footheader" <%= link_to "Home",    root_path %></a><br>
+					<a class="footsub" <%= link_to "2025 Labs",    root_path %></a><br>
+					<a class="footsub" href="http://www.2025consulting.com" target="_blank">2025 Consulting</a><br>
+					<a class="footsub" href="http://www.2025kids.com" target="_blank">2025 Kids Site</a><br>
+					<a class="footsub" <%= link_to "About Us",    about_us_path %></a><br>
+<!--					<a class="footsub" <%= link_to "Contact",    contact_path %></a><br> -->
+<!--					<a class="footsub" <%= link_to "Blog",    blog_path %></a>		-->
+				</div>	<!--col-sm-3-->
+
+
+				<div class="col-sm-3" style="text-align:left">
+					<a class="footheader" <%= link_to "Resources",    resources_path %></a><br>
+					<a class="footsub" <%= link_to "Web Resources",    resources_web_resources_path, html_options = {:alt=>"Engineering for Kids Web Resources"}  %></a><br>
+					<a class="footsub" <%= link_to "Toys and Games",    resources_toys_and_games_path, html_options = {:alt=>"Engineering Toys and Games"}  %></a><br>
+					<a class="footsub" <%= link_to "Camps and Events",    resources_camps_and_events_path, html_options = {:alt=>"Engineering Camps and Events"}  %></a><br>
+					<a class="footsub" <%= link_to "Awards and Scholarships",    resources_awards_scholarships_path, html_options = {:alt=>"Engineering and Computer Science Scholarships"}  %></a><br>
+					<a class="footsub" <%= link_to "Books",    resources_books_path, html_options = {:alt=>"Engineering for Kids Books"}  %></a>
+				</div><!--col-sm-3-->
+
+				<div class="col-sm-3" style="text-align:left">
+					<a class="footheader" <%= link_to "Research",    research_path %></a><br>
+					<a class="footsub" <%= link_to "Research Articles",    research_path %></a><br>
+					<a class="footsub" <%= link_to "Dashboard",    dashboard_path, html_options = {:alt=>"Dashboards tracking Equity in Engineering"}  %></a>
+				</div><!--col-sm-3-->
+			</div><!--row-->
+			</div>
+		</div> <!--container-->
+</div> <!--footer-->
