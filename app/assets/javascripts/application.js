@@ -16,3 +16,8 @@
 //= require jquery.cycle2.all
 
 //= require bootstrap.min
+//= require_tree .
+
+$(document).ready(function(){
+        $('.dropdown-toggle').dropdown();
+    });
